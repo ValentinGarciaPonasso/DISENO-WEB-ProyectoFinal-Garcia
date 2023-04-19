@@ -1,0 +1,1541 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Rubik";
+    src: url(../fonts/rubikiso.ttf);
+    font-family: "Anton";
+    src: url(../fonts/Anton-Regular.ttf);
+}
+
+
+.link{
+    text-transform: none;
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* HEADER HEADER HEADER */
+
+/* CAMBIO DE LOGO DE LOGIN PARA 400 PX */
+/* CAMBIO DE LOGO DE LOGIN PARA 400 PX */
+
+@media (max-width: 480px){
+    .boton-idioma{
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+    }
+
+
+
+    .boton-login{
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 0px;
+        background-image: url(../pictures/login.jpg);
+
+    }
+
+
+}
+
+
+
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+
+@media (min-width: 300px) and (max-width: 1199px){
+
+    .header {
+        height: 150px;
+        width: 100vw;
+        background-color: black;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: minmax(100px, 400px) minmax(100px, 400px) minmax(100px, 400px);
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+        position: sticky;
+        top:0;
+        z-index: 1;
+    }
+
+    .logo-y-nombre{
+        width: 150px ;
+        height: 150px;
+        margin: 0;
+        align-self: self-start;
+        box-sizing: border-box;
+        grid-column: 2/3;
+        text-transform: none;
+        text-decoration: none;
+        order: 2;
+        }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        background-image:url(../pictures/logo.jpg) ;
+        box-sizing: border-box;
+        margin: 25px;
+        }
+
+    header h1{
+    font-size: 0rem;
+    }
+
+
+    .barra-de-navegacion{
+        grid-column: 1/2;
+        order:1;
+        /* background-color: darkgreen; */
+    }
+
+    .navbar-toggler{
+        background-color: darkgreen;
+    }
+
+    .container-fluid{
+        background-color: darkgreen;
+        padding: 0px;
+        border-radius: 15%;
+        border: solid 5px black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    nav .link{
+        text-transform: none;
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .idioma-y-login{
+        order: 3;
+        grid-column: 3/4;
+        align-self: self-start;
+        margin: 55px 0 55px 0;
+        gap: 0px;
+    }
+
+    .boton-busqueda {
+        display: none;
+    }
+
+}
+
+
+
+
+
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+
+@media (min-width: 1200px) {
+
+.header {
+    height: 150px;
+    width: 100vw;
+    background-color: black;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 350px 1fr 300px;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+
+.logo-y-nombre{
+width: 325px ;
+height: 150px;
+margin: 0;
+box-sizing: border-box;
+grid-column: 1/2;
+display: inline-flex;
+display: flex;
+align-items: center;
+text-transform: none;
+text-decoration: none;
+}
+
+.nombre{
+    color: darkgreen;
+    text-align: center;
+    font-weight: bold;
+    width: 225px;
+    height: 100px;
+    box-sizing: border-box;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image:url(../pictures/logo.jpg) ;
+    box-sizing: border-box;
+    }
+
+nav .link{
+    text-transform: none;
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.barra-de-navegacion{
+    color: darkgreen;
+    margin: 10px;
+    /* border: solid 1px white; */
+    box-sizing: border-box;
+    grid-column: 2/3;
+    display: inline-block;
+    display: flex;
+    gap: 40px;
+}
+
+.idioma-y-login{
+    height: 100px;
+    width: 300px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    grid-column: 3/4;
+    display: inline-flex;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+
+.boton-busqueda{
+    width: 50px;
+    height: 50px;
+    background-image: url(../pictures/busqueda.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    border: solid 10px black;
+    border-radius: 25%;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+.boton-idioma{
+    width: 130px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+    margin: 10px;
+    /* color: black;
+    background-color: darkgreen;
+    box-sizing: border-box;
+    border: solid 20px black;*/
+}
+
+.boton-login{
+    /* font-family: "Rubik";
+    font-weight: bold; */
+    width: 130px;
+    text-align: center;
+    margin: 10px;
+    /* background-color: red;
+    border: solid 20px black;
+    box-sizing: border-box;
+    color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+}
+
+}
+
+
+/* FOOTER FOOTER FOOTER */
+
+
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+
+
+@media (min-width: 300px) and (max-width: 1199px){
+
+    .footer{
+        /* position: relative; */
+        /* top: 120px; */
+        box-sizing: border-box;
+        background-color:rgba(16,16,16,255);
+        height: 800px ;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 400px 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .mapa-footer{
+        border: solid darkgreen 5px;
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .barra-footer{
+        /* border: solid yellow 5px; */
+        width: 100vw;
+        color: darkgreen;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 10px 0px 10px 0px;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        display: inline-block;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+    }
+
+    .rrss{
+        /* border: solid yellow 5px; */
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: spa;
+    }
+}
+
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+
+@media (min-width: 1200px) {
+
+
+.footer{
+    /* position: relative; */
+    /* top: 120px; */
+    box-sizing: border-box;
+    background-color:rgba(16,16,16,255);
+    height: 400px ;
+    width: 100vw;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    /* align-items: center; */
+    align-items: center;
+    /* border: solid red 5px; */
+}
+
+/* MAPA */
+
+.mapa-footer{
+    border: solid darkgreen 5px;
+    width: 300px;
+    height: 300px;
+}
+
+/* BARRA */
+
+.barra-footer{
+    /* border: solid yellow 5px; */
+    color: darkgreen;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    display: flex;
+    gap: 40px;
+}
+
+
+/* RRSS */
+
+.rrss{
+    /* border: solid yellow 5px; */
+    width: 70px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+
+/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
+/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
+/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
+/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
+
+
+/* MAIN MAIN MAIN */
+
+
+
+
+.main{
+    background-color: darkgreen;
+    width: 100vw;
+    /* top: 95px; */
+    left: 0px;
+}
+
+/* DESTACADOS */
+
+.seccion-destacados{
+    background-color: darkgreen;
+    height: 800px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../pictures/equipo.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.subtitulo-index{
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 80px;
+    width: 500px;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+}
+
+main h2 {
+    font-size: 2.5rem;
+}
+
+
+
+
+.boton-leer-mas{
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 130px;
+    height: 70px;
+    border-radius: 15%;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: darkgreen;
+    box-sizing: border-box;
+    border: solid 5px black;
+}
+
+/* PROXIMOS PARTIDOS */
+
+.seccion-proximos-partidos{
+    margin: 40px 0px 0px 0px;
+    background-color: darkgreen;
+    /* width: 100vw; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagenes-partidos{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* NOTICIAS */
+
+.seccion-noticias{
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.noticias-y-tabla{
+    margin: 10px;
+    width: 99vw;
+    height: 850px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(350px, 40vh) );
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.noticias-index{
+    width: 400px;
+    height: 300px;
+    border: solid black 5px;
+    background-color: black;
+    color: darkgreen;
+
+}
+
+.tabla-de-posiciones{
+    /* width: 320px;
+    height: 570px; */
+    border: solid 5px black;
+    box-sizing: border-box;
+    /* top: 15px; */
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+
+
+
+
+
+section article h3{
+    font-size: 2.5rem;
+
+}
+
+/* PALMARES */
+
+.seccion-palmares{
+    background-color: #F1F3F2;
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trofeos{
+    width: 99vw;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.875rem;
+    box-sizing: border-box;
+    /* border: solid 1px yellow; */
+}
+
+/* .fotos-copas{
+    border: solid darkgreen 5px;
+} */
+
+
+
+/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
+/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
+/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
+/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
+
+
+
+
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+
+@media (min-width:300px) and (max-width: 479px){
+
+    /* BARRA DE NAVEGACION FUTBOL */
+
+    .nav-futbol{
+        background-color: darkgreen;
+        position: sticky;
+        border: solid black 5px;
+    }
+
+    li .nav-link{
+        color: black;
+        font-weight: bold;
+        font-size: 1.0rem;
+    }
+
+    /* TITULO FUTBOL */
+
+    .main-futbol h2{
+        text-align: center;
+        color: black;
+        font-family: "Anton";
+        font-size: 2.5rem;
+        height: 100px;
+        width: 500px;
+        max-width: 100%;
+        max-height: 100%;
+        text-shadow: -2px 0px 0 rgb(114, 165, 114);
+        justify-self: center;
+        padding: 10px;
+        margin: 50px 0px 50px 0px;
+        align-self: center;
+    }
+
+    .main-futbol{
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+    /* SECTION PLANTEL */
+
+    .plantel-y-staff{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* align-items: center; */
+    }
+
+
+    /* ESTILO DE  NOMBRE Y POCISION DE JUGADORES */
+
+    .plantel-y-staff h3{
+        color: darkgreen;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .plantel-y-staff h4{
+        color: darkgreen;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    /* GRID DE JUGADORES DEL PLANTEL */
+
+    .jugadores-masc{        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(300px, 14);
+        gap: 25px 0px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .fotos-personas img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* .carta-impar{
+        grid-column: 1/3;
+        max-width: 100%;
+        max-height: 100%;
+    } */
+
+
+    /* GRID DE CUERPO TECNICO DEL PLANTEL */
+
+    .staff-masc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(300px, 3);
+        gap: 25px 0px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+
+
+    /* SECCIÓN TABLA DE POSICIONES */
+
+    .tabla-futbol{
+        background-color: darkgreen;
+        border: solid 5px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .foto-tabla{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    /* SECCIÓN FIXTURE */
+
+    .fixture-futbol{
+        background-color: darkgreen;
+        border: solid 5px black;
+        border-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .foto-fixture img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+}
+
+
+
+
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+
+
+
+
+@media (min-width:480px) and (max-width: 1199px){
+
+    /* BARRA DE NAVEGACION FUTBOL */
+
+    .nav-futbol{
+        background-color: darkgreen;
+        position: sticky;
+        border: solid black 5px;
+    }
+
+    li .nav-link{
+        color: black;
+        font-weight: bold;
+        font-size: 1.0rem;
+    }
+
+    /* TITULO FUTBOL */
+
+    .main-futbol h2{
+        text-align: center;
+        color: black;
+        font-family: "Anton";
+        font-size: 2.5rem;
+        height: 80px;
+        width: 500px;
+        text-shadow: -2px 0px 0 rgb(114, 165, 114);
+        justify-self: center;
+        padding: 10px;
+        margin: 10px 0px 10px 0px;
+        align-self: center;
+    }
+
+    .main-futbol{
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+    /* SECTION PLANTEL */
+
+    .plantel-y-staff{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* align-items: center; */
+    }
+
+
+    /* ESTILO DE  NOMBRE Y POCISION DE JUGADORES */
+
+    .plantel-y-staff h3{
+        color: darkgreen;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .plantel-y-staff h4{
+        color: darkgreen;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    /* GRID DE JUGADORES DEL PLANTEL */
+
+    .jugadores-masc{
+        margin: 50px 0px 50px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(300px, 14);
+        gap: 25px 0px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+
+
+    .carta-impar{
+        grid-column: 1/3;
+    }
+
+
+    /* GRID DE CUERPO TECNICO DEL PLANTEL */
+
+    .staff-masc{
+        margin: 50px 0px 50px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(300px, 3);
+        gap: 25px 0px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+    }
+
+    /* SECCIÓN TABLA DE POSICIONES */
+
+    .tabla-futbol{
+        padding: 50px 0px 50px 0px;
+        box-sizing: border-box;
+        background-color: darkgreen;
+        border: solid 5px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .foto-tabla{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    /* SECCIÓN FIXTURE */
+
+    .fixture-futbol{
+        padding: 50px 0px 50px 0px;
+        box-sizing: border-box;
+        background-color: darkgreen;
+        border: solid 5px black;
+        border-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .foto-fixture img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+
+
+@media (min-width:1200px){
+
+    /* BARRA DE NAVEGACION FUTBOL */
+
+    .nav-futbol{
+        background-color: darkgreen;
+        position: sticky;
+        border: solid black 5px;
+        font-size: 1.3rem;
+        width: 80vw;
+        align-self: center;
+    }
+
+    li .nav-link{
+        color: black;
+        font-weight: bold;
+    }
+
+    /* TITULO FUTBOL */
+
+    .main-futbol h2{
+        text-align: center;
+        color: black;
+        font-family: "Anton";
+        font-size: 2.5rem;
+        height: 80px;
+        width: 500px;
+        text-shadow: -2px 0px 0 rgb(114, 165, 114);
+        justify-self: center;
+        padding: 10px;
+        margin: 10px 0px 10px 0px;
+        align-self: center;
+    }
+
+    .main-futbol{
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        /* align-items: center; */
+    }
+
+
+    /* SECTION PLANTEL */
+
+    .plantel-y-staff h3{
+        color: darkgreen;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .plantel-y-staff h4{
+        color: darkgreen;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    /* GRID DE JUGADORES DEL PLANTEL */
+
+    .plantel-y-staff{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .jugadores-masc{
+        margin: 50px 0px 50px 0px;
+        display: grid;
+        grid-template-columns: repeat(5,200px);
+        grid-template-rows: repeat(300px, 5);
+        gap: 100px 50px;
+        justify-content: center;
+    }
+
+
+    /* GRID DE CUERPO TECNICO DEL PLANTEL */
+
+        
+    .staff-masc{
+        margin: 50px 0px 50px 0px;
+        display: grid;
+        grid-template-columns: repeat(5,200px);
+        gap: 100px 50px;
+        justify-content: center;
+    }
+
+
+    .tabla-futbol{
+        padding: 50px 0px 50px 0px;
+        box-sizing: border-box;
+        background-color: darkgreen;
+        border: solid 5px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .foto-tabla{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+
+    .fixture-futbol{
+        padding: 50px 0px 50px 0px;
+        box-sizing: border-box;
+        background-color: darkgreen;
+        border: solid 5px black;
+        border-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .foto-fixture img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
+/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
+/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
+/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
+
+
+
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+
+@media (min-width:300px) and (max-width: 479px){
+
+    .main-contactos{        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        /* align-items: center; */
+        background-color: #F2F2F2;
+    }
+
+    .main-contactos h2{        
+        text-align: center;
+        color: black;
+        font-family: "Anton";
+        font-size: 2.5rem;
+        height: 50px;
+        width: 500px;
+        max-width: 100%;
+        max-height: 100%;
+        text-shadow: -2px 0px 0 rgb(114, 165, 114);
+        justify-self: center;
+        padding: 10px;
+        margin: 50px 0px 50px 0px;
+        align-self: center;
+    }
+
+    .presentacion-contactos{
+        background-color: darkgreen;
+    }
+
+    .nav-contactos{        
+        position: sticky;
+        border: solid black 5px;
+    }
+
+    li .nav-link{
+        color: black;
+        font-weight: bold;
+        font-size: 1.0rem;
+        padding: 0px;
+        margin: 5px
+    }
+
+
+    /* SECCION DIRECCIONES Y CONTACTOS */
+
+    .direcicones-contactos{
+        padding: 20px 0px 20px 0px;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;        
+    }
+
+    .carta-contactos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .direcicones-contactos h3{        
+        /* text-align: center; */
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: darkgreen;
+        padding: 20px 0px 20px 10px;
+    }
+
+    .direcicones-contactos article h4{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: darkgreen;
+        padding: 20px 0px 20px 20px;
+    }
+
+    .direcicones-contactos article p{
+        color: darkgreen;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .mapa-contactos{
+        width: 250px;
+        height: 250px;
+        align-self: center;
+    }
+
+
+    /* SECCION CONTACTENOS */
+
+    .formulario-contactos{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        background-color: darkgreen;
+    }
+
+    .formulario-contactos h3{      
+        padding: 20px 0px 20px 0px;
+        /* text-align: center; */
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: black;
+        padding: 20px 0px 20px 10px;
+    }
+    
+    .form-contactos{
+        padding: 20px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .tarjeta-contacto{
+        font-weight: bold;
+        color: black;
+        width: 80vw;
+        display: grid;
+        grid-template-rows: 40px 40px;
+        /* justify-items: center; */
+        align-items: center;        
+    }
+
+    .tarjeta-contacto-mensaje{
+        height: 300px;
+        font-weight: bold;
+        color: black;
+        width: 80vw;
+        display: grid;
+        grid-template-rows: 40px 40px 1fr;
+        /* justify-items: flex-start; */
+        align-items: flex-start;        
+    }
+
+    .tarjeta-contacto input{
+        background-color: rgb(123, 182, 123);
+    }
+
+    .tarjeta-contacto select{
+        background-color: rgb(123, 182, 123);
+    }
+
+    .tarjeta-contacto-mensaje textarea{
+        background-color: rgb(123, 182, 123);
+    }
+
+}
+
+
+
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+
+
+
+
+@media (min-width:480px) and (max-width: 1199px){
+
+    .main-contactos{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* align-items: center; */
+        background-color: #F2F2F2;
+    }
+
+    .main-contactos h2{        
+        text-align: center;
+        color: black;
+        font-family: "Anton";
+        font-size: 2.5rem;
+        height: 50px;
+        width: 500px;
+        max-width: 100%;
+        max-height: 100%;
+        text-shadow: -2px 0px 0 rgb(114, 165, 114);
+        justify-self: center;
+        padding: 10px;
+        margin: 50px 0px 50px 0px;
+        align-self: center;
+    }
+
+    .presentacion-contactos{
+        background-color: darkgreen;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .nav-contactos{        
+        position: sticky;
+        border: solid black 5px;
+    }
+
+    li .nav-link{
+        color: black;
+        font-weight: bold;
+        font-size: 1.0rem;
+        padding: 0px;
+        margin: 5px
+    }
+
+
+    /* SECCION DIRECCIONES Y CONTACTOS */
+
+    .direcicones-contactos{
+        padding: 20px 0px 20px 0px;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;        
+    }
+
+    .carta-contactos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .direcicones-contactos h3{        
+        /* text-align: center; */
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: darkgreen;
+        padding: 20px 0px 20px 10px;
+    }
+
+    .direcicones-contactos article h4{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: darkgreen;
+        padding: 20px 0px 20px 20px;
+    }
+
+    .direcicones-contactos article p{
+        color: darkgreen;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .mapa-contactos{
+        width: 250px;
+        height: 250px;
+        align-self: center;
+    }
+
+
+    /* SECCION CONTACTENOS */
+
+    .formulario-contactos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        background-color: darkgreen;
+        margin: 10px;
+    }
+
+    .formulario-contactos h3{      
+        padding: 20px 0px 20px 0px;
+        /* text-align: center; */
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: black;
+        padding: 20px 0px 20px 10px;
+    }
+    
+    .form-contactos{
+        padding: 20px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .tarjeta-contacto{
+        font-weight: bold;
+        color: black;
+        width: 80vw;
+        display: grid;
+        grid-template-rows: 40px 40px;
+        /* justify-items: center; */
+        align-items: center;        
+    }
+
+    .tarjeta-contacto-mensaje{
+        height: 300px;
+        font-weight: bold;
+        color: black;
+        width: 80vw;
+        display: grid;
+        grid-template-rows: 40px 40px 1fr;
+        /* justify-items: flex-start; */
+        align-items: flex-start;        
+    }
+
+    .tarjeta-contacto input{
+        background-color: rgb(123, 182, 123);
+    }
+
+    .tarjeta-contacto select{
+        background-color: rgb(123, 182, 123);
+    }
+
+    .tarjeta-contacto-mensaje textarea{
+        background-color: rgb(123, 182, 123);
+    }
+
+}
+
+
+
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+
+
+
+@media (min-width:1200px){
+
+    .main-contactos{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        /* align-items: center; */
+        background-color: #F2F2F2;
+    }
+
+    .main-contactos h2{        
+        text-align: center;
+        color: black;
+        font-family: "Anton";
+        font-size: 2.5rem;
+        height: 50px;
+        width: 500px;
+        max-width: 100%;
+        max-height: 100%;
+        text-shadow: -2px 0px 0 rgb(114, 165, 114);
+        justify-self: center;
+        padding: 10px;
+        margin: 50px 0px 50px 0px;
+        align-self: center;
+    }
+
+    .presentacion-contactos{
+        background-color: darkgreen;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .nav-contactos{        
+        position: sticky;
+        border: solid black 5px;
+    }
+
+    li .nav-link{
+        color: black;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding: 0px;
+        margin: 5px
+    }
+
+    /* SECCION DIRECCIONES Y CONTACTOS */
+
+
+    .direcicones-contactos{
+        padding: 20px 0px 20px 0px;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;        
+    }
+    
+    .direcicones-contactos h3{        
+        /* text-align: center; */
+        font-size: 2.0rem;
+        font-weight: bold;
+        color: darkgreen;
+        padding: 20px 0px 20px 10px;
+        grid-column: 1/4;
+    }
+
+    .articulos-contactos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px 50px;
+    }
+
+    .mapa-contactos{
+        width: 400px;
+        height: 350px;
+    }
+
+    .direcicones-contactos article h4{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: darkgreen;
+        padding: 20px 0px 20px 20px;
+    }
+
+    .direcicones-contactos article p{
+        color: darkgreen;
+        padding: 0px 0px 0px 20px;
+    }
+
+
+    /* SECCION CONTACTOS */
+
+
+    /* .formulario-contactos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+    } */
+
+    .formulario-contactos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        background-color: darkgreen;
+        margin: 10px;
+    }
+
+    .formulario-contactos h3{      
+        padding: 20px 0px 20px 0px;
+        /* text-align: center; */
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: black;
+        padding: 20px 0px 20px 10px;
+    }
+
+    .form-contactos form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 400px 100px ;
+        gap: 50px 50px;
+    }
+
+    .tarjeta-contacto{
+        width: 40vw;
+        font-weight: bold;
+        color: black;
+        display: grid;
+        grid-template-rows: 40px 40px;
+        justify-self: center;
+    }
+
+    .tarjeta-contacto-mensaje{
+        height: 300px;
+        font-weight: bold;
+        color: black;
+        width: 40vw;
+        display: grid;
+        grid-template-rows: 40px 300px;
+        justify-self: center; 
+    }
+
+    .enviar-y-resetear{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .tarjeta-contacto input{
+        background-color: rgb(123, 182, 123);
+    }
+
+    .tarjeta-contacto select{
+        background-color: rgb(123, 182, 123);
+    }
+
+    .tarjeta-contacto-mensaje textarea{
+        background-color: rgb(123, 182, 123);
+    }
+
+    
+
+
+}
