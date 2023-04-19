@@ -318,7 +318,7 @@ nav .link{
         /* border: solid yellow 5px; */
         width: 100vw;
         color: darkgreen;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         font-weight: bold;
         margin: 10px 0px 10px 0px;
         padding: 10px;
@@ -328,6 +328,11 @@ nav .link{
         display: flex;
         justify-content: space-evenly;
         gap: 40px;
+    }
+
+    .barra-footer .link{
+        font-size: 1.0rem;
+        font-weight: bold;
     }
 
     .rrss{
