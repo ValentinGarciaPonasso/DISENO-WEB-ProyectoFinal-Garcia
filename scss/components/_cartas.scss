@@ -146,9 +146,9 @@
     padding: 5px;
     background-color: $color-secundario;
     color: $color-primario;
-    h3{
-        font-size: 2.5rem;    
-    }
+    &-titulo{    
+        font-size: 1.7rem; 
+    }    
 }
 // TARJETAS DE NOTICIAS DE MAS DEPORTE
 .noticias-mas-deporte{
