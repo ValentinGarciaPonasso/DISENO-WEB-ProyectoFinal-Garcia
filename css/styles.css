@@ -1,156 +1,286 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face{
-    font-family: "Rubik";
-    src: url(../fonts/rubikiso.ttf);
-    font-family: "Anton";
-    src: url(../fonts/Anton-Regular.ttf);
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/rubikiso.ttf);
+  font-family: "Anton";
+  src: url(../fonts/Anton-Regular.ttf);
+  font-family: "Libre Baskerville-Bold";
+  src: url(../fonts/LibreBaskerville-Bold.ttf);
+  font-family: "Kapra-Bold";
+  src: url(../fonts/Kapra-Bold.otf);
+}
+.boton-leer-mas {
+  font-size: 1.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 130px;
+  height: 70px;
+  border-radius: 15%;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgba(5, 107, 5, 0.993);
+  box-sizing: border-box;
+  border: solid 5px black;
 }
 
-
-.link{
-    text-transform: none;
-    text-decoration: none;
-    color: darkgreen;
+@media (max-width: 1199px) {
+  .carta {
+    max-width: 400px;
+    min-width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(5, 107, 5, 0.993);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+  }
+  .carta h4 {
     font-size: 1.5rem;
     font-weight: bold;
+    color: black;
+    padding: 20px 0px 20px 20px;
+  }
+  .carta p {
+    color: black;
+    padding: 0px 0px 0px 20px;
+  }
+  .carta-mapa {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+  }
 }
-
-
-/* HEADER HEADER HEADER */
-
-/* CAMBIO DE LOGO DE LOGIN PARA 400 PX */
-/* CAMBIO DE LOGO DE LOGIN PARA 400 PX */
-
-@media (max-width: 480px){
-    .boton-idioma{
-        width: 40px;
-        height: 40px;
-        box-sizing: border-box;
-    }
-
-
-
-    .boton-login{
-        width: 40px;
-        height: 40px;
-        box-sizing: border-box;
-        font-size: 0px;
-        background-image: url(../pictures/login.jpg);
-
-    }
-
-
-}
-
-
-
-/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
-/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
-
-@media (min-width: 300px) and (max-width: 1199px){
-
-    .header {
-        height: 150px;
-        width: 100vw;
-        background-color: black;
-        top: 0;
-        left: 0;
-        display: grid;
-        grid-template-columns: minmax(100px, 400px) minmax(100px, 400px) minmax(100px, 400px);
-        justify-items: center;
-        align-items: center;
-        box-sizing: border-box;
-        position: sticky;
-        top:0;
-        z-index: 1;
-    }
-
-    .logo-y-nombre{
-        width: 150px ;
-        height: 150px;
-        margin: 0;
-        align-self: self-start;
-        box-sizing: border-box;
-        grid-column: 2/3;
-        text-transform: none;
-        text-decoration: none;
-        order: 2;
-        }
-
-    .logo{
-        width: 100px;
-        height: 100px;
-        background-image:url(../pictures/logo.jpg) ;
-        box-sizing: border-box;
-        margin: 25px;
-        }
-
-    header h1{
-    font-size: 0rem;
-    }
-
-
-    .barra-de-navegacion{
-        grid-column: 1/2;
-        order:1;
-        /* background-color: darkgreen; */
-    }
-
-    .navbar-toggler{
-        background-color: darkgreen;
-    }
-
-    .container-fluid{
-        background-color: darkgreen;
-        padding: 0px;
-        border-radius: 15%;
-        border: solid 5px black;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    nav .link{
-        text-transform: none;
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .idioma-y-login{
-        order: 3;
-        grid-column: 3/4;
-        align-self: self-start;
-        margin: 55px 0 55px 0;
-        gap: 0px;
-    }
-
-    .boton-busqueda {
-        display: none;
-    }
-
-}
-
-
-
-
-
-/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-
 @media (min-width: 1200px) {
+  .carta {
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(5, 107, 5, 0.993);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+    box-sizing: border-box;
+  }
+  .carta h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    padding: 20px 0px 20px 20px;
+    box-sizing: border-box;
+  }
+  .carta p {
+    color: black;
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
+  }
+  .carta-mapa {
+    width: 350px;
+    height: 350px;
+    align-self: center;
+  }
+}
+@media (max-width: 1199px) {
+  .tarjeta-contacto {
+    font-weight: bold;
+    color: black;
+    width: 80vw;
+    display: grid;
+    grid-template-rows: 40px 40px;
+    align-items: center;
+  }
+  .tarjeta-contacto-mensaje {
+    height: 300px;
+    font-weight: bold;
+    color: black;
+    width: 80vw;
+    display: grid;
+    grid-template-rows: 40px 40px 1fr;
+    align-items: flex-start;
+  }
+  .tarjeta-contacto-mensaje textarea {
+    background-color: rgb(123, 182, 123);
+  }
+  .tarjeta-contacto input {
+    background-color: rgb(123, 182, 123);
+  }
+  .tarjeta-contacto select {
+    background-color: rgb(123, 182, 123);
+  }
+}
+@media (min-width: 1200px) {
+  .tarjeta-contacto {
+    width: 40vw;
+    font-weight: bold;
+    color: black;
+    display: grid;
+    grid-template-rows: 40px 40px;
+    justify-self: center;
+  }
+  .tarjeta-contacto-mensaje {
+    height: 300px;
+    font-weight: bold;
+    color: black;
+    width: 40vw;
+    display: grid;
+    grid-template-rows: 40px 300px;
+    justify-self: center;
+  }
+  .tarjeta-contacto-mensaje textarea {
+    background-color: rgb(123, 182, 123);
+  }
+  .tarjeta-contacto select {
+    background-color: rgb(123, 182, 123);
+  }
+  .tarjeta-contacto input {
+    background-color: rgb(123, 182, 123);
+  }
+  .enviar-y-resetear {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+  }
+}
+.fotos-personas :hover {
+  transform: scale(1.2, 1.2);
+}
+.fotos-personas img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 10px 10px 10px black;
+}
 
-.header {
+.noticias-index {
+  max-width: 500px;
+  min-width: 300px;
+  margin: 10px;
+  height: 300px;
+  border: solid black 5px;
+  padding: 5px;
+  background-color: black;
+  color: rgba(5, 107, 5, 0.993);
+}
+.noticias-index h3 {
+  font-size: 2.5rem;
+}
+
+.noticias-mas-deporte {
+  max-width: 500px;
+  min-width: 300px;
+  margin: 10px;
+  height: 300px;
+  border: solid black 5px;
+  padding: 5px;
+  background-color: black;
+  color: rgba(5, 107, 5, 0.993);
+}
+.noticias-mas-deporte h4 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 480px) {
+  .boton-idioma {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+  .boton-login {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 0px;
+    background-image: url(../pictures/login.jpg);
+  }
+}
+@media (min-width: 300px) and (max-width: 1199px) {
+  header {
+    height: 150px;
+    width: 100vw;
+    background-color: black;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: minmax(100px, 400px) minmax(100px, 400px) minmax(100px, 400px);
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    font-size: 0rem;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    align-self: self-start;
+    box-sizing: border-box;
+    grid-column: 2/3;
+    text-transform: none;
+    text-decoration: none;
+    order: 2;
+  }
+  .logo-escudo {
+    width: 100px;
+    height: 100px;
+    background-image: url(../pictures/logo.jpg);
+    box-sizing: border-box;
+    margin: 25px;
+  }
+  .barra-de-navegacion {
+    grid-column: 1/2;
+    order: 1;
+  }
+  .container-fluid {
+    background-color: rgba(5, 107, 5, 0.993);
+    padding: 0px;
+    border-radius: 15%;
+    border: solid 5px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .navbar-toggler {
+    background-color: rgba(5, 107, 5, 0.993);
+  }
+  nav .link {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .idioma-y-login {
+    order: 3;
+    grid-column: 3/4;
+    align-self: self-start;
+    margin: 55px 0 55px 0;
+    gap: 0px;
+  }
+  .boton-busqueda {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  header {
     height: 150px;
     width: 100vw;
     background-color: black;
@@ -162,26 +292,33 @@
     align-items: center;
     box-sizing: border-box;
     position: sticky;
-    top:0;
-    z-index: 1;
-}
-
-
-.logo-y-nombre{
-width: 325px ;
-height: 150px;
-margin: 0;
-box-sizing: border-box;
-grid-column: 1/2;
-display: inline-flex;
-display: flex;
-align-items: center;
-text-transform: none;
-text-decoration: none;
-}
-
-.nombre{
-    color: darkgreen;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 {
+    font-size: 1.4rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .logo {
+    width: 325px;
+    height: 150px;
+    margin: 0;
+    box-sizing: border-box;
+    grid-column: 1/2;
+    display: inline-flex;
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    text-decoration: none;
+  }
+  .logo-escudo {
+    width: 100px;
+    height: 100px;
+    background-image: url(../pictures/logo.jpg);
+    box-sizing: border-box;
+  }
+  .logo-nombre {
+    color: rgba(5, 107, 5, 0.993);
     text-align: center;
     font-weight: bold;
     width: 225px;
@@ -191,43 +328,25 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header h1{
-    font-size: 1.4rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
-
-.logo{
-    width: 100px;
-    height: 100px;
-    background-image:url(../pictures/logo.jpg) ;
-    box-sizing: border-box;
-    }
-
-nav .link{
+  }
+  nav .link {
     text-transform: none;
     text-decoration: none;
-    color: darkgreen;
+    color: rgba(5, 107, 5, 0.993);
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-}
-
-.barra-de-navegacion{
-    color: darkgreen;
+  }
+  .barra-de-navegacion {
+    color: rgba(5, 107, 5, 0.993);
     margin: 10px;
-    /* border: solid 1px white; */
     box-sizing: border-box;
     grid-column: 2/3;
     display: inline-block;
     display: flex;
     gap: 40px;
-}
-
-.idioma-y-login{
+  }
+  .idioma-y-login {
     height: 100px;
     width: 300px;
     font-size: 1.2rem;
@@ -236,10 +355,8 @@ nav .link{
     display: inline-flex;
     margin: 20px;
     box-sizing: border-box;
-}
-
-
-.boton-busqueda{
+  }
+  .boton-busqueda {
     width: 50px;
     height: 50px;
     background-image: url(../pictures/busqueda.jpg);
@@ -251,9 +368,8 @@ nav .link{
     border-radius: 25%;
     align-self: center;
     box-sizing: border-box;
-}
-
-.boton-idioma{
+  }
+  .boton-idioma {
     width: 130px;
     text-align: center;
     display: flex;
@@ -261,124 +377,73 @@ nav .link{
     align-items: center;
     border-radius: 25%;
     margin: 10px;
-    /* color: black;
-    background-color: darkgreen;
-    box-sizing: border-box;
-    border: solid 20px black;*/
-}
-
-.boton-login{
-    /* font-family: "Rubik";
-    font-weight: bold; */
+  }
+  .boton-login {
     width: 130px;
     text-align: center;
     margin: 10px;
-    /* background-color: red;
-    border: solid 20px black;
-    box-sizing: border-box;
-    color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25%;
+  }
 }
-
-}
-
-
-/* FOOTER FOOTER FOOTER */
-
-
-/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
-
-
-@media (min-width: 300px) and (max-width: 1199px){
-
-    .footer{
-        /* position: relative; */
-        /* top: 120px; */
-        box-sizing: border-box;
-        background-color:rgba(16,16,16,255);
-        height: 800px ;
-        width: 100vw;
-        display: grid;
-        grid-template-rows: 400px 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .mapa-footer{
-        border: solid darkgreen 5px;
-        width: 300px;
-        height: 300px;
-
-    }
-
-    .barra-footer{
-        /* border: solid yellow 5px; */
-        width: 100vw;
-        color: darkgreen;
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin: 10px 0px 10px 0px;
-        padding: 10px;
-        text-align: center;
-        box-sizing: border-box;
-        display: inline-block;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 40px;
-    }
-
-    .barra-footer .link{
-        font-size: 1.0rem;
-        font-weight: bold;
-    }
-
-    .rrss{
-        /* border: solid yellow 5px; */
-        width: 100vw;
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: spa;
-    }
-}
-
-/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-
-@media (min-width: 1200px) {
-
-
-.footer{
-    /* position: relative; */
-    /* top: 120px; */
+@media (min-width: 300px) and (max-width: 1199px) {
+  .footer {
     box-sizing: border-box;
-    background-color:rgba(16,16,16,255);
-    height: 400px ;
+    background-color: rgb(16, 16, 16);
+    height: 800px;
     width: 100vw;
-    display: flex;
-    padding: 40px;
-    justify-content: space-between;
-    /* align-items: center; */
+    display: grid;
+    grid-template-rows: 400px 1fr 1fr;
+    justify-items: center;
     align-items: center;
-    /* border: solid red 5px; */
-}
-
-/* MAPA */
-
-.mapa-footer{
-    border: solid darkgreen 5px;
+  }
+  .footer-mapa {
+    border: solid rgba(5, 107, 5, 0.993) 5px;
     width: 300px;
     height: 300px;
+  }
+  .footer-barra {
+    width: 100vw;
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+  .footer-rrss {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
-
-/* BARRA */
-
-.barra-footer{
-    /* border: solid yellow 5px; */
-    color: darkgreen;
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+@media (min-width: 1200px) {
+  .footer {
+    background-color: rgb(16, 16, 16);
+    height: 400px;
+    width: 100vw;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-mapa {
+    border: solid rgba(5, 107, 5, 0.993) 5px;
+    width: 300px;
+    height: 300px;
+  }
+  .footer-barra {
+    color: rgba(5, 107, 5, 0.993);
     font-size: 1.3rem;
     font-weight: bold;
     margin: 10px;
@@ -386,76 +451,357 @@ nav .link{
     box-sizing: border-box;
     display: inline-block;
     display: flex;
+    justify-content: space-between;
     gap: 40px;
-}
-
-
-/* RRSS */
-
-.rrss{
-    /* border: solid yellow 5px; */
+  }
+  .footer-rrss {
     width: 70px;
     height: 300px;
+    justify-self: end;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
 }
+.subtitulo-index {
+  text-align: center;
+  color: black;
+  font-family: "Anton";
+  font-size: 2.5rem;
+  height: 80px;
+  width: 100vw;
+  text-shadow: -2px 0px 0 rgb(114, 165, 114);
 }
-
-
-/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
-/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
-/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
-/* INDEX           -           INDEX           -           INDEX           -           INDEX            */
-
-
-/* MAIN MAIN MAIN */
-
-
-
-
-.main{
-    background-color: darkgreen;
-    width: 100vw;
-    /* top: 95px; */
+.subtitulo-index h2 {
+  margin-top: 20px;
+  position: relative;
+  animation-name: nav-move;
+  animation-duration: 5s;
+}
+@keyframes nav-move {
+  0% {
     left: 0px;
+  }
+  25% {
+    left: 100px;
+  }
+  50% {
+    left: 0px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
-/* DESTACADOS */
+li .nav-link {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0px;
+  margin: 5px;
+}
 
-.seccion-destacados{
-    background-color: darkgreen;
-    height: 800px;
+@media (min-width: 300px) and (max-width: 1199px) {
+  .link {
+    text-transform: none;
+    text-decoration: none;
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1200px) {
+  .link {
+    text-transform: none;
+    text-decoration: none;
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .main {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    width: 100vw;
+    left: 0px;
+    /* PROXIMOS PARTIDOS */
+  }
+  .main h2 {
+    font-size: 2.5rem;
+  }
+  .main-destacados {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../pictures/equipo.jpg);
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-}
-
-.subtitulo-index{
+  }
+  .main-destacados .carousel-item .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-destacados .carousel-item h5 {
+    font-size: 35px;
+    font-family: "Kapra-Bold";
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
+  }
+  .main-destacados .carousel-item p {
+    display: none;
+  }
+  .main-destacados .carousel-item .boton-leer-mas {
+    align-self: center;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 20%;
+    margin: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
-    font-family: "Anton";
-    font-size: 2.5rem;
-    height: 80px;
-    width: 500px;
-    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    background-color: rgba(5, 107, 5, 0.993);
+    box-sizing: border-box;
+    border: solid 5px black;
+  }
+  .main-proximos-partidos {
+    margin: 40px 0px 0px 0px;
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-proximos-partidos-imagenes {
+    display: none;
+  }
+  .main-proximos-partidos-carrusel {
+    width: 100vw;
+    padding: 15%;
+  }
+  .main-noticias {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-noticias-area {
+    margin: 10px;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-noticias-area-tabla {
+    min-width: 300px;
+    box-sizing: border-box;
+  }
+  .main-noticias-area-tabla img {
+    box-shadow: 10px 10px 10px black;
+  }
+  .main-palmares {
+    background-color: #F1F3F2;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-palmares-trofeos {
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.875rem;
+    box-sizing: border-box;
+  }
 }
-
-main h2 {
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+@media (min-width: 480px) and (max-width: 1199px) {
+  .main {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    width: 100vw;
+    left: 0px;
+    /* PROXIMOS PARTIDOS */
+  }
+  .main h2 {
     font-size: 2.5rem;
+  }
+  .main-destacados {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-destacados .carousel-item .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-destacados .carousel-item h5 {
+    font-size: 35px;
+    font-family: "Kapra-Bold";
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
+  }
+  .main-destacados .carousel-item p {
+    display: none;
+  }
+  .main-destacados .carousel-item .boton-leer-mas {
+    align-self: center;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 150px;
+    height: 30px;
+    border-radius: 20%;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgba(5, 107, 5, 0.993);
+    box-sizing: border-box;
+    border: solid 5px black;
+  }
+  .main-proximos-partidos {
+    margin: 40px 0px 0px 0px;
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-proximos-partidos-imagenes {
+    display: none;
+  }
+  .main-proximos-partidos-carrusel {
+    width: 100vw;
+    padding: 15%;
+  }
+  .main-noticias {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-noticias-area {
+    margin: 10px;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .main-noticias-area-tabla {
+    min-width: 300px;
+    box-sizing: border-box;
+  }
+  .main-noticias-area-tabla img {
+    box-shadow: 10px 10px 10px black;
+  }
+  .main-palmares {
+    background-color: #F1F3F2;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-palmares-trofeos {
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.875rem;
+    box-sizing: border-box;
+  }
 }
-
-
-
-
-.boton-leer-mas{
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+@media (min-width: 1200px) {
+  .main {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    width: 100vw;
+    left: 0px;
+    /* PALMARES */
+  }
+  .main h2 {
+    font-size: 2.5rem;
+  }
+  .main-destacados {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+  .main-destacados .carousel-inner {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .main-destacados .carousel-item .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-destacados .carousel-item h5 {
+    font-size: 45px;
+    font-family: "Kapra-Bold";
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
+  }
+  .main-destacados .carousel-item p {
+    font-size: 30px;
+    font-family: "Kapra-Bold";
+    color: white;
+    font-weight: bold;
+  }
+  .main-destacados .carousel-item .boton-leer-mas {
     font-size: 1.25rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 130px;
@@ -467,103 +813,65 @@ main h2 {
     justify-content: center;
     align-items: center;
     color: black;
-    background-color: darkgreen;
+    background-color: rgba(5, 107, 5, 0.993);
     box-sizing: border-box;
     border: solid 5px black;
-}
-
-/* PROXIMOS PARTIDOS */
-
-.seccion-proximos-partidos{
+  }
+  .main-proximos-partidos {
     margin: 40px 0px 0px 0px;
-    background-color: darkgreen;
-    /* width: 100vw; */
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.imagenes-partidos{
+  }
+  .main-proximos-partidos-imagenes {
     width: 100vw;
     display: flex;
     justify-content: space-around;
-}
-
-/* NOTICIAS */
-
-.seccion-noticias{
+  }
+  .main-proximos-partidos-carrusel {
+    display: none;
+  }
+  .main-noticias {
     margin: 40px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-}
-
-.noticias-y-tabla{
+  }
+  .main-noticias-area {
     margin: 10px;
     width: 99vw;
     height: 850px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, minmax(350px, 40vh) );
+    grid-template-rows: repeat(2, minmax(350px, 40vh));
     gap: 10px;
     align-items: center;
     justify-items: center;
     justify-content: center;
     align-content: center;
-}
-
-
-
-.noticias-index{
-    width: 400px;
-    height: 300px;
-    border: solid black 5px;
-    background-color: black;
-    color: darkgreen;
-
-}
-
-.tabla-de-posiciones{
-    /* width: 320px;
-    height: 570px; */
-    border: solid 5px black;
-    box-sizing: border-box;
-    /* top: 15px; */
+  }
+  .main-noticias-area-tabla {
     grid-column: 3/4;
     grid-row: 1/3;
-}
-
-
-
-
-
-
-section article h3{
-    font-size: 2.5rem;
-
-}
-
-/* PALMARES */
-
-.seccion-palmares{
+  }
+  .main-noticias-area-tabla img {
+    box-shadow: 10px 10px 10px black;
+  }
+  .main-palmares {
     background-color: #F1F3F2;
     height: 400px;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.trofeos{
+  }
+  .main-palmares-trofeos {
     width: 99vw;
     height: 220px;
     display: flex;
@@ -573,974 +881,1373 @@ section article h3{
     text-align: center;
     font-size: 1.875rem;
     box-sizing: border-box;
-    /* border: solid 1px yellow; */
+  }
 }
-
-/* .fotos-copas{
-    border: solid darkgreen 5px;
-} */
-
-
-
-/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
-/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
-/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
-/* SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              -               SECCIÓN FUTBOL              */
-
-
-
-
 /* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
 /* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
-
-@media (min-width:300px) and (max-width: 479px){
-
-    /* BARRA DE NAVEGACION FUTBOL */
-
-    .nav-futbol{
-        background-color: darkgreen;
-        position: sticky;
-        border: solid black 5px;
-    }
-
-    li .nav-link{
-        color: black;
-        font-weight: bold;
-        font-size: 1.0rem;
-    }
-
-    /* TITULO FUTBOL */
-
-    .main-futbol h2{
-        text-align: center;
-        color: black;
-        font-family: "Anton";
-        font-size: 2.5rem;
-        height: 100px;
-        width: 500px;
-        max-width: 100%;
-        max-height: 100%;
-        text-shadow: -2px 0px 0 rgb(114, 165, 114);
-        justify-self: center;
-        padding: 10px;
-        margin: 50px 0px 50px 0px;
-        align-self: center;
-    }
-
-    .main-futbol{
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-
-    /* SECTION PLANTEL */
-
-    .plantel-y-staff{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        /* align-items: center; */
-    }
-
-
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+@media (min-width: 300px) and (max-width: 479px) {
+  .futbol {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
+    /* SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL */
+    /* SECCIÓN TABLA DE POSICIONES - SECCIÓN TABLA DE POSICIONES - SECCIÓN TABLA DE POSICIONES */
+  }
+  .futbol-nav {
+    background-color: rgba(5, 107, 5, 0.993);
+    position: sticky;
+    border: solid black 5px;
+  }
+  .futbol h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 100px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+    align-self: center;
+  }
+  .futbol-plantel-y-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     /* ESTILO DE  NOMBRE Y POCISION DE JUGADORES */
-
-    .plantel-y-staff h3{
-        color: darkgreen;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .plantel-y-staff h4{
-        color: darkgreen;
-        font-size: 1.3rem;
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-    }
-
-    /* GRID DE JUGADORES DEL PLANTEL */
-
-    .jugadores-masc{        
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(300px, 14);
-        gap: 25px 0px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-    }
-
-    .fotos-personas img{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    /* .carta-impar{
-        grid-column: 1/3;
-        max-width: 100%;
-        max-height: 100%;
-    } */
-
-
-    /* GRID DE CUERPO TECNICO DEL PLANTEL */
-
-    .staff-masc{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(300px, 3);
-        gap: 25px 0px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-    }
-
-
-
-    /* SECCIÓN TABLA DE POSICIONES */
-
-    .tabla-futbol{
-        background-color: darkgreen;
-        border: solid 5px black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .foto-tabla{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-
-    /* SECCIÓN FIXTURE */
-
-    .fixture-futbol{
-        background-color: darkgreen;
-        border: solid 5px black;
-        border-top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .foto-fixture img{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-
+  }
+  .futbol-plantel-y-staff h3 {
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  }
+  .futbol-plantel-y-staff h4 {
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  }
+  .futbol-plantel-y-staff-jugadores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(300px, 14);
+    gap: 25px 0px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .futbol-plantel-y-staff-cuerpo-tecnico {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(300px, 3);
+    gap: 25px 0px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .futbol-tabla {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .futbol-tabla-foto {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 10px 10px 10px black;
+  }
+  .futbol-fixture {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    border: solid 5px black;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .futbol-fixture-foto img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 10px 10px 10px black;
+  }
 }
-
-
-
-
-/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
-/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
-
-
-
-
-@media (min-width:480px) and (max-width: 1199px){
-
-    /* BARRA DE NAVEGACION FUTBOL */
-
-    .nav-futbol{
-        background-color: darkgreen;
-        position: sticky;
-        border: solid black 5px;
-    }
-
-    li .nav-link{
-        color: black;
-        font-weight: bold;
-        font-size: 1.0rem;
-    }
-
-    /* TITULO FUTBOL */
-
-    .main-futbol h2{
-        text-align: center;
-        color: black;
-        font-family: "Anton";
-        font-size: 2.5rem;
-        height: 80px;
-        width: 500px;
-        text-shadow: -2px 0px 0 rgb(114, 165, 114);
-        justify-self: center;
-        padding: 10px;
-        margin: 10px 0px 10px 0px;
-        align-self: center;
-    }
-
-    .main-futbol{
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-
-    /* SECTION PLANTEL */
-
-    .plantel-y-staff{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        /* align-items: center; */
-    }
-
-
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+@media (min-width: 480px) and (max-width: 1199px) {
+  .futbol {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
+    /* SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL */
+    /* SECCIÓN TABLA DE POSICIONES - SECCIÓN TABLA DE POSICIONES - SECCIÓN TABLA DE POSICIONES */
+    /* SECCIÓN FIXTURE - SECCIÓN FIXTURE - SECCIÓN FIXTURE - SECCIÓN FIXTURE */
+  }
+  .futbol-nav {
+    background-color: rgba(5, 107, 5, 0.993);
+    position: sticky;
+    border: solid black 5px;
+  }
+  .futbol h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 80px;
+    width: 500px;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    align-self: center;
+  }
+  .futbol-plantel-y-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     /* ESTILO DE  NOMBRE Y POCISION DE JUGADORES */
-
-    .plantel-y-staff h3{
-        color: darkgreen;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .plantel-y-staff h4{
-        color: darkgreen;
-        font-size: 1.3rem;
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-    }
-
     /* GRID DE JUGADORES DEL PLANTEL */
-
-    .jugadores-masc{
-        margin: 50px 0px 50px 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(300px, 14);
-        gap: 25px 0px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-    }
-
-
-
-    .carta-impar{
-        grid-column: 1/3;
-    }
-
-
     /* GRID DE CUERPO TECNICO DEL PLANTEL */
-
-    .staff-masc{
-        margin: 50px 0px 50px 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(300px, 3);
-        gap: 25px 0px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-    }
-
-    /* SECCIÓN TABLA DE POSICIONES */
-
-    .tabla-futbol{
-        padding: 50px 0px 50px 0px;
-        box-sizing: border-box;
-        background-color: darkgreen;
-        border: solid 5px black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .foto-tabla{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-
-    /* SECCIÓN FIXTURE */
-
-    .fixture-futbol{
-        padding: 50px 0px 50px 0px;
-        box-sizing: border-box;
-        background-color: darkgreen;
-        border: solid 5px black;
-        border-top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .foto-fixture img{
-        max-width: 100%;
-        max-height: 100%;
-    }
+  }
+  .futbol-plantel-y-staff h3 {
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  }
+  .futbol-plantel-y-staff h4 {
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  }
+  .futbol-plantel-y-staff-jugadores {
+    margin: 50px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(300px, 14);
+    gap: 25px 0px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .futbol-plantel-y-staff-jugadores-carta-impar {
+    grid-column: 1/3;
+  }
+  .futbol-plantel-y-staff-cuerpo-tecnico {
+    margin: 50px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(300px, 3);
+    gap: 25px 0px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .futbol-plantel-y-staff-cuerpo-tecnico-carta-impar {
+    grid-column: 1/3;
+  }
+  .futbol-tabla {
+    padding: 50px 0px 50px 0px;
+    box-sizing: border-box;
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .futbol-tabla-foto {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 10px 10px 10px black;
+  }
+  .futbol-fixture {
+    padding: 50px 0px 50px 0px;
+    box-sizing: border-box;
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    border: solid 5px black;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .futbol-fixture-foto img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 10px 10px 10px black;
+  }
 }
-
-
-
-/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-
-
-@media (min-width:1200px){
-
-    /* BARRA DE NAVEGACION FUTBOL */
-
-    .nav-futbol{
-        background-color: darkgreen;
-        position: sticky;
-        border: solid black 5px;
-        font-size: 1.3rem;
-        width: 80vw;
-        align-self: center;
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+@media (min-width: 1200px) {
+  .futbol {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
+    /* SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL - SECTION PLANTEL */
+    /* SECCIÓN TABLA DE POSICIONES - SECCIÓN TABLA DE POSICIONES - SECCIÓN TABLA DE POSICIONES */
+    /* SECCIÓN FIXTURE - SECCIÓN FIXTURE - SECCIÓN FIXTURE - SECCIÓN FIXTURE */
+  }
+  .futbol-nav {
+    background-color: rgba(5, 107, 5, 0.993);
+    position: sticky;
+    border: solid black 5px;
+    font-size: 1.3rem;
+    width: 80vw;
+    align-self: center;
+  }
+  .futbol h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 80px;
+    width: 500px;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    align-self: center;
+    position: relative;
+    animation-name: nav-move;
+    animation-duration: 5s;
+  }
+  @keyframes nav-move {
+    0% {
+      left: 0px;
     }
-
-    li .nav-link{
-        color: black;
-        font-weight: bold;
+    25% {
+      left: 100px;
     }
-
-    /* TITULO FUTBOL */
-
-    .main-futbol h2{
-        text-align: center;
-        color: black;
-        font-family: "Anton";
-        font-size: 2.5rem;
-        height: 80px;
-        width: 500px;
-        text-shadow: -2px 0px 0 rgb(114, 165, 114);
-        justify-self: center;
-        padding: 10px;
-        margin: 10px 0px 10px 0px;
-        align-self: center;
+    50% {
+      left: 0px;
     }
-
-    .main-futbol{
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        /* align-items: center; */
+    75% {
+      left: -100px;
     }
-
-
-    /* SECTION PLANTEL */
-
-    .plantel-y-staff h3{
-        color: darkgreen;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
+    100% {
+      left: 0px;
     }
-
-    .plantel-y-staff h4{
-        color: darkgreen;
-        font-size: 1.3rem;
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
-    }
-
-    /* GRID DE JUGADORES DEL PLANTEL */
-
-    .plantel-y-staff{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .jugadores-masc{
-        margin: 50px 0px 50px 0px;
-        display: grid;
-        grid-template-columns: repeat(5,200px);
-        grid-template-rows: repeat(300px, 5);
-        gap: 100px 50px;
-        justify-content: center;
-    }
-
-
+  }
+  .futbol-plantel-y-staff {
+    display: flex;
+    flex-direction: column;
     /* GRID DE CUERPO TECNICO DEL PLANTEL */
-
-        
-    .staff-masc{
-        margin: 50px 0px 50px 0px;
-        display: grid;
-        grid-template-columns: repeat(5,200px);
-        gap: 100px 50px;
-        justify-content: center;
-    }
-
-
-    .tabla-futbol{
-        padding: 50px 0px 50px 0px;
-        box-sizing: border-box;
-        background-color: darkgreen;
-        border: solid 5px black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .foto-tabla{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-
-    .fixture-futbol{
-        padding: 50px 0px 50px 0px;
-        box-sizing: border-box;
-        background-color: darkgreen;
-        border: solid 5px black;
-        border-top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .foto-fixture img{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-
-    
+    /* GRID DE CUERPO TECNICO DEL PLANTEL */
+  }
+  .futbol-plantel-y-staff h3 {
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  }
+  .futbol-plantel-y-staff h4 {
+    color: rgba(5, 107, 5, 0.993);
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  }
+  .futbol-plantel-y-staff-jugadores {
+    margin: 50px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(300px, 5);
+    gap: 100px 50px;
+    justify-content: center;
+  }
+  .futbol-plantel-y-staff-cuerpo-tecnico {
+    margin: 50px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    gap: 100px 50px;
+    justify-content: center;
+  }
+  .futbol-tabla {
+    padding: 50px 0px 50px 0px;
+    box-sizing: border-box;
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    border: solid 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .futbol-tabla-foto {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .futbol-fixture {
+    padding: 50px 0px 50px 0px;
+    box-sizing: border-box;
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    border: solid 5px black;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .futbol-fixture-foto img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
-
-
-
-
-
-
-
-/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
-/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
-/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
-/* SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              -               SECCIÓN CONTACTOS              */
-
-
-
+@media (min-width: 300px) and (max-width: 479px) {
+  .contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #F2F2F2;
+    /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS */
+  }
+  .contactos h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 50px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+    align-self: center;
+  }
+  .contactos-presentacion {
+    background-color: rgba(5, 107, 5, 0.993);
+  }
+  .contactos-presentacion-nav {
+    position: sticky;
+    border: solid black 5px;
+  }
+  .contactos-direciones {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .contactos-direciones-articulos {
+    gap: 100px;
+  }
+  .contactos-direciones h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+  }
+  .contactos-direciones-articulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactos-formulario {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgba(5, 107, 5, 0.993);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+  }
+  .contactos-formulario h3 {
+    padding: 20px 0px 20px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0px 20px 20px;
+  }
+  .contactos-formulario-form {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+@media (min-width: 480px) and (max-width: 1199px) {
+  .contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #F2F2F2;
+    /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS- SECCION CONTACTENOS */
+  }
+  .contactos h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 50px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+    align-self: center;
+  }
+  .contactos-presentacion {
+    background-color: rgba(5, 107, 5, 0.993);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .contactos-presentacion-nav {
+    position: sticky;
+    border: solid black 5px;
+  }
+  .contactos-direciones {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .contactos-direciones h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+  }
+  .contactos-direciones-articulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactos-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgba(5, 107, 5, 0.993);
+    margin: 20px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+  }
+  .contactos-formulario h3 {
+    padding: 20px 0px 20px 20px;
+    /* text-align: center; */
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0px 20px 10px;
+  }
+  .contactos-formulario-form {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+@media (min-width: 1200px) {
+  .contactos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #F2F2F2;
+    /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS- SECCION CONTACTENOS */
+  }
+  .contactos h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 50px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+    align-self: center;
+    position: relative;
+    animation-name: nav-move;
+    animation-duration: 5s;
+  }
+  @keyframes nav-move {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 100px;
+    }
+    50% {
+      left: 0px;
+    }
+    75% {
+      left: -100px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  .contactos-presentacion {
+    background-color: rgba(5, 107, 5, 0.993);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .contactos-presentacion-nav {
+    position: sticky;
+    border: solid black 5px;
+  }
+  .contactos-direciones {
+    padding: 20px 0px 20px 0px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .contactos-direciones h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkgreen;
+    padding: 20px 0px 20px 10px;
+    grid-column: 1/4;
+    margin-left: 50px;
+  }
+  .contactos-direciones-articulos {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .contactos-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgba(5, 107, 5, 0.993);
+    margin: 20px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+  }
+  .contactos-formulario h3 {
+    padding: 20px 0px 20px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0px 20px 20px;
+  }
+  .contactos-formulario-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 400px 100px;
+    gap: 50px 50px;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .trabaja-con-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #F2F2F2;
+    /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS */
+  }
+  .trabaja-con-nosotros h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 150px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    padding: 10px;
+    margin: 25px 0px 25px 0px;
+  }
+  .trabaja-con-nosotros-presentacion {
+    background-color: rgba(5, 107, 5, 0.993);
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-items: center;
+  }
+  .trabaja-con-nosotros-presentacion-nav {
+    position: sticky;
+    border: solid black 5px;
+  }
+  .trabaja-con-nosotros-formulario {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgba(5, 107, 5, 0.993);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+  }
+  .trabaja-con-nosotros-formulario h3 {
+    padding: 20px 0px 20px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0px 20px 20px;
+  }
+  .trabaja-con-nosotros-formulario-form {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .trabaja-con-nosotros-formulario-form .cv input {
+    display: block;
+  }
+}
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+@media (min-width: 480px) and (max-width: 1199px) {
+  .trabaja-con-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #F2F2F2;
+    /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS */
+  }
+  .trabaja-con-nosotros h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 150px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    padding: 10px;
+    margin: 25px 0px 25px 0px;
+    align-self: center;
+  }
+  .trabaja-con-nosotros-presentacion {
+    background-color: rgba(5, 107, 5, 0.993);
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-items: center;
+  }
+  .trabaja-con-nosotros-presentacion-nav {
+    position: sticky;
+    border: solid black 5px;
+  }
+  .trabaja-con-nosotros-formulario {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgba(5, 107, 5, 0.993);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+  }
+  .trabaja-con-nosotros-formulario h3 {
+    padding: 20px 0px 20px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0px 20px 20px;
+  }
+  .trabaja-con-nosotros-formulario-form {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+@media (min-width: 1200px) {
+  .trabaja-con-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #F2F2F2;
+    /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS- SECCION CONTACTENOS */
+  }
+  .trabaja-con-nosotros h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 150px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    padding: 10px;
+    margin: 25px 0px 0px 0px;
+    align-self: center;
+    position: relative;
+    animation-name: nav-move;
+    animation-duration: 5s;
+  }
+  .trabaja-con-nosotros h2:hover {
+    animation-name: nav-move;
+    animation-duration: 5s;
+  }
+  @keyframes nav-move {
+    0% {
+      left: 0px;
+    }
+    25% {
+      left: 100px;
+    }
+    50% {
+      left: 0px;
+    }
+    75% {
+      left: -100px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  .trabaja-con-nosotros-presentacion {
+    background-color: rgba(5, 107, 5, 0.993);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .trabaja-con-nosotros-presentacion-nav {
+    position: sticky;
+    border: solid black 5px;
+  }
+  .trabaja-con-nosotros-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgba(5, 107, 5, 0.993);
+    margin: 20px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5%;
+  }
+  .trabaja-con-nosotros-formulario h3 {
+    padding: 20px 0px 20px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0px 20px 20px;
+  }
+  .trabaja-con-nosotros-formulario-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    gap: 50px 50px;
+  }
+  .trabaja-con-nosotros-formulario-form form .enviar-y-resetear {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+}
 /* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
 /* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
-
-@media (min-width:300px) and (max-width: 479px){
-
-    .main-contactos{        
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        /* align-items: center; */
-        background-color: #F2F2F2;
-    }
-
-    .main-contactos h2{        
-        text-align: center;
-        color: black;
-        font-family: "Anton";
-        font-size: 2.5rem;
-        height: 50px;
-        width: 500px;
-        max-width: 100%;
-        max-height: 100%;
-        text-shadow: -2px 0px 0 rgb(114, 165, 114);
-        justify-self: center;
-        padding: 10px;
-        margin: 50px 0px 50px 0px;
-        align-self: center;
-    }
-
-    .presentacion-contactos{
-        background-color: darkgreen;
-    }
-
-    .nav-contactos{        
-        position: sticky;
-        border: solid black 5px;
-    }
-
-    li .nav-link{
-        color: black;
-        font-weight: bold;
-        font-size: 1.0rem;
-        padding: 0px;
-        margin: 5px
-    }
-
-
-    /* SECCION DIRECCIONES Y CONTACTOS */
-
-    .direcicones-contactos{
-        padding: 20px 0px 20px 0px;
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;        
-    }
-
-    .carta-contactos{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .direcicones-contactos h3{        
-        /* text-align: center; */
-        font-size: 1.7rem;
-        font-weight: bold;
-        color: darkgreen;
-        padding: 20px 0px 20px 10px;
-    }
-
-    .direcicones-contactos article h4{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: darkgreen;
-        padding: 20px 0px 20px 20px;
-    }
-
-    .direcicones-contactos article p{
-        color: darkgreen;
-        padding: 0px 0px 0px 20px;
-    }
-
-    .mapa-contactos{
-        width: 250px;
-        height: 250px;
-        align-self: center;
-    }
-
-
-    /* SECCION CONTACTENOS */
-
-    .formulario-contactos{
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        background-color: darkgreen;
-    }
-
-    .formulario-contactos h3{      
-        padding: 20px 0px 20px 0px;
-        /* text-align: center; */
-        font-size: 1.7rem;
-        font-weight: bold;
-        color: black;
-        padding: 20px 0px 20px 10px;
-    }
-    
-    .form-contactos{
-        padding: 20px 0px 20px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .tarjeta-contacto{
-        font-weight: bold;
-        color: black;
-        width: 80vw;
-        display: grid;
-        grid-template-rows: 40px 40px;
-        /* justify-items: center; */
-        align-items: center;        
-    }
-
-    .tarjeta-contacto-mensaje{
-        height: 300px;
-        font-weight: bold;
-        color: black;
-        width: 80vw;
-        display: grid;
-        grid-template-rows: 40px 40px 1fr;
-        /* justify-items: flex-start; */
-        align-items: flex-start;        
-    }
-
-    .tarjeta-contacto input{
-        background-color: rgb(123, 182, 123);
-    }
-
-    .tarjeta-contacto select{
-        background-color: rgb(123, 182, 123);
-    }
-
-    .tarjeta-contacto-mensaje textarea{
-        background-color: rgb(123, 182, 123);
-    }
-
+/* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
+@media (min-width: 300px) and (max-width: 479px) {
+  .mas-deporte {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
+  }
+  .mas-deporte-nav {
+    background-color: rgba(5, 107, 5, 0.993);
+    position: sticky;
+    border: solid black 5px;
+  }
+  .mas-deporte h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 100px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+    align-self: center;
+  }
+  .mas-deporte-basquetbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0px 10px 0px;
+  }
+  .mas-deporte-basquetbol-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-basquetbol-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    padding: 20px 0px 20px 10px;
+  }
+  .mas-deporte-basquetbol-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-basquetbol-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mas-deporte-basquetbol-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-basquetbol-staff-plantel {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-basquetbol-staff-ct {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0px 10px 0px;
+  }
+  .mas-deporte-rugby-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-rugby-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-rugby-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-rugby-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mas-deporte-rugby-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-rugby-staff-plantel {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby-staff-ct {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0px 20px 0px;
+  }
+  .mas-deporte-atletismo-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-atletismo-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-atletismo-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-atletismo-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mas-deporte-atletismo-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-atletismo-staff-plantel {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo-staff-ct {
+    box-shadow: 10px 10px 10px black;
+  }
+}
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
+@media (min-width: 480px) and (max-width: 1199px) {
+  .mas-deporte {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
+  }
+  .mas-deporte-nav {
+    background-color: rgba(5, 107, 5, 0.993);
+    position: sticky;
+    border: solid black 5px;
+  }
+  .mas-deporte h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 100px;
+    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 50px 0px 50px 0px;
+    align-self: center;
+  }
+  .mas-deporte-basquetbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0px 10px 0px;
+  }
+  .mas-deporte-basquetbol-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-basquetbol-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-basquetbol-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-basquetbol-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mas-deporte-basquetbol-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-basquetbol-staff-plantel {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-basquetbol-staff-ct {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0px 10px 0px;
+  }
+  .mas-deporte-rugby-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-rugby-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-rugby-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-rugby-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mas-deporte-rugby-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-rugby-staff-plantel {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby-staff-ct {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0px 20px 0px;
+  }
+  .mas-deporte-atletismo-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-atletismo-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-atletismo-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-atletismo-staff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mas-deporte-atletismo-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-atletismo-staff-plantel {
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo-staff-ct {
+    box-shadow: 10px 10px 10px black;
+  }
+}
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+@media (min-width: 1200px) {
+  .mas-deporte {
+    background: rgb(6, 15, 5);
+    background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
+  }
+  .mas-deporte-nav {
+    background-color: rgba(5, 107, 5, 0.993);
+    position: sticky;
+    border: solid black 5px;
+    font-size: 1.3rem;
+    width: 80vw;
+    align-self: center;
+  }
+  .mas-deporte h2 {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 80px;
+    width: 500px;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    justify-self: center;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    align-self: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .mas-deporte-basquetbol {
+    margin: 20px 0 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 900px;
+    gap: 20px 20px;
+    align-items: start;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+  .mas-deporte-basquetbol-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-basquetbol-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-basquetbol-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-basquetbol-staff {
+    max-width: 40vw;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 40px 1fr 40px 1fr;
+    gap: 20px;
+  }
+  .mas-deporte-basquetbol-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-align: center;
+    align-self: center;
+  }
+  .mas-deporte-basquetbol-staff-plantel {
+    width: 300px;
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-basquetbol-staff-ct {
+    width: 300px;
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby {
+    margin: 20px 0 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 900px;
+    gap: 20px 20px;
+    align-items: start;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+  .mas-deporte-rugby-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-rugby-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-rugby-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-rugby-staff {
+    max-width: 40vw;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 40px 1fr 40px 1fr;
+    gap: 20px;
+  }
+  .mas-deporte-rugby-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-align: center;
+    align-self: center;
+  }
+  .mas-deporte-rugby-staff-plantel {
+    width: 300px;
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby-staff-ct {
+    width: 300px;
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo {
+    margin: 20px 0 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 900px;
+    gap: 20px 20px;
+    align-items: start;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+  .mas-deporte-atletismo-noticias {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr 180px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+  }
+  .mas-deporte-atletismo-noticias h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+  }
+  .mas-deporte-atletismo-noticias .noticias-mas-deporte {
+    margin: 0;
+  }
+  .mas-deporte-atletismo-staff {
+    max-width: 40vw;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 40px 1fr 40px 1fr;
+    gap: 20px;
+  }
+  .mas-deporte-atletismo-staff h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgba(5, 107, 5, 0.993);
+    padding: 20px 0px 20px 10px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-align: center;
+    align-self: center;
+  }
+  .mas-deporte-atletismo-staff-plantel {
+    width: 300px;
+    box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo-staff-ct {
+    width: 300px;
+    box-shadow: 10px 10px 10px black;
+  }
 }
 
-
-
-/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
-/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
-
-
-
-
-@media (min-width:480px) and (max-width: 1199px){
-
-    .main-contactos{        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        /* align-items: center; */
-        background-color: #F2F2F2;
-    }
-
-    .main-contactos h2{        
-        text-align: center;
-        color: black;
-        font-family: "Anton";
-        font-size: 2.5rem;
-        height: 50px;
-        width: 500px;
-        max-width: 100%;
-        max-height: 100%;
-        text-shadow: -2px 0px 0 rgb(114, 165, 114);
-        justify-self: center;
-        padding: 10px;
-        margin: 50px 0px 50px 0px;
-        align-self: center;
-    }
-
-    .presentacion-contactos{
-        background-color: darkgreen;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .nav-contactos{        
-        position: sticky;
-        border: solid black 5px;
-    }
-
-    li .nav-link{
-        color: black;
-        font-weight: bold;
-        font-size: 1.0rem;
-        padding: 0px;
-        margin: 5px
-    }
-
-
-    /* SECCION DIRECCIONES Y CONTACTOS */
-
-    .direcicones-contactos{
-        padding: 20px 0px 20px 0px;
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;        
-    }
-
-    .carta-contactos{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .direcicones-contactos h3{        
-        /* text-align: center; */
-        font-size: 1.7rem;
-        font-weight: bold;
-        color: darkgreen;
-        padding: 20px 0px 20px 10px;
-    }
-
-    .direcicones-contactos article h4{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: darkgreen;
-        padding: 20px 0px 20px 20px;
-    }
-
-    .direcicones-contactos article p{
-        color: darkgreen;
-        padding: 0px 0px 0px 20px;
-    }
-
-    .mapa-contactos{
-        width: 250px;
-        height: 250px;
-        align-self: center;
-    }
-
-
-    /* SECCION CONTACTENOS */
-
-    .formulario-contactos{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        background-color: darkgreen;
-        margin: 10px;
-    }
-
-    .formulario-contactos h3{      
-        padding: 20px 0px 20px 0px;
-        /* text-align: center; */
-        font-size: 1.7rem;
-        font-weight: bold;
-        color: black;
-        padding: 20px 0px 20px 10px;
-    }
-    
-    .form-contactos{
-        padding: 20px 0px 20px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .tarjeta-contacto{
-        font-weight: bold;
-        color: black;
-        width: 80vw;
-        display: grid;
-        grid-template-rows: 40px 40px;
-        /* justify-items: center; */
-        align-items: center;        
-    }
-
-    .tarjeta-contacto-mensaje{
-        height: 300px;
-        font-weight: bold;
-        color: black;
-        width: 80vw;
-        display: grid;
-        grid-template-rows: 40px 40px 1fr;
-        /* justify-items: flex-start; */
-        align-items: flex-start;        
-    }
-
-    .tarjeta-contacto input{
-        background-color: rgb(123, 182, 123);
-    }
-
-    .tarjeta-contacto select{
-        background-color: rgb(123, 182, 123);
-    }
-
-    .tarjeta-contacto-mensaje textarea{
-        background-color: rgb(123, 182, 123);
-    }
-
-}
-
-
-
-/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-
-
-
-@media (min-width:1200px){
-
-    .main-contactos{        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        /* align-items: center; */
-        background-color: #F2F2F2;
-    }
-
-    .main-contactos h2{        
-        text-align: center;
-        color: black;
-        font-family: "Anton";
-        font-size: 2.5rem;
-        height: 50px;
-        width: 500px;
-        max-width: 100%;
-        max-height: 100%;
-        text-shadow: -2px 0px 0 rgb(114, 165, 114);
-        justify-self: center;
-        padding: 10px;
-        margin: 50px 0px 50px 0px;
-        align-self: center;
-    }
-
-    .presentacion-contactos{
-        background-color: darkgreen;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .nav-contactos{        
-        position: sticky;
-        border: solid black 5px;
-    }
-
-    li .nav-link{
-        color: black;
-        font-weight: bold;
-        font-size: 1.3rem;
-        padding: 0px;
-        margin: 5px
-    }
-
-    /* SECCION DIRECCIONES Y CONTACTOS */
-
-
-    .direcicones-contactos{
-        padding: 20px 0px 20px 0px;
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;        
-    }
-    
-    .direcicones-contactos h3{        
-        /* text-align: center; */
-        font-size: 2.0rem;
-        font-weight: bold;
-        color: darkgreen;
-        padding: 20px 0px 20px 10px;
-        grid-column: 1/4;
-    }
-
-    .articulos-contactos{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px 50px;
-    }
-
-    .mapa-contactos{
-        width: 400px;
-        height: 350px;
-    }
-
-    .direcicones-contactos article h4{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: darkgreen;
-        padding: 20px 0px 20px 20px;
-    }
-
-    .direcicones-contactos article p{
-        color: darkgreen;
-        padding: 0px 0px 0px 20px;
-    }
-
-
-    /* SECCION CONTACTOS */
-
-
-    /* .formulario-contactos {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-    } */
-
-    .formulario-contactos{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        background-color: darkgreen;
-        margin: 10px;
-    }
-
-    .formulario-contactos h3{      
-        padding: 20px 0px 20px 0px;
-        /* text-align: center; */
-        font-size: 1.7rem;
-        font-weight: bold;
-        color: black;
-        padding: 20px 0px 20px 10px;
-    }
-
-    .form-contactos form{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 100px 100px 400px 100px ;
-        gap: 50px 50px;
-    }
-
-    .tarjeta-contacto{
-        width: 40vw;
-        font-weight: bold;
-        color: black;
-        display: grid;
-        grid-template-rows: 40px 40px;
-        justify-self: center;
-    }
-
-    .tarjeta-contacto-mensaje{
-        height: 300px;
-        font-weight: bold;
-        color: black;
-        width: 40vw;
-        display: grid;
-        grid-template-rows: 40px 300px;
-        justify-self: center; 
-    }
-
-    .enviar-y-resetear{
-        grid-column: 2/3;
-        grid-row: 5/6;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .tarjeta-contacto input{
-        background-color: rgb(123, 182, 123);
-    }
-
-    .tarjeta-contacto select{
-        background-color: rgb(123, 182, 123);
-    }
-
-    .tarjeta-contacto-mensaje textarea{
-        background-color: rgb(123, 182, 123);
-    }
-
-    
-
-
-}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,195 @@
+@media (max-width: 480px){
+    .boton {
+        &-idioma {
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+        }
+        &-login {
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 0px;
+            background-image: url(../pictures/login.jpg);
+        }
+    }
+}
+@media (min-width: 300px) and (max-width: 1199px){
+    header {
+        height: 150px;
+        width: 100vw;
+        background-color: $color-secundario;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: minmax(100px, 400px) minmax(100px, 400px) minmax(100px, 400px);
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+        position: sticky;
+        top:0;
+        z-index: 100;
+        h1 {
+            font-size: 0rem;
+        }      
+    }
+    .logo {
+        width: 150px ;
+        height: 150px;
+        margin: 0;
+        align-self: self-start;
+        box-sizing: border-box;
+        grid-column: 2/3;
+        text-transform: none;
+        text-decoration: none;
+        order: 2;
+        &-escudo{
+            width: 100px;
+            height: 100px;
+            background-image:url(../pictures/logo.jpg) ;
+            box-sizing: border-box;
+            margin: 25px;
+        }
+    }
+    .barra-de-navegacion{
+        grid-column: 1/2;
+        order:1;
+    }
+    .container-fluid{
+        background-color: $color-primario;
+        padding: 0px;
+        border-radius: 15%;
+        border: solid 5px $color-secundario;
+        text-align: center;
+        @include flex-center();
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .navbar-toggler{
+        background-color: $color-primario;
+    }
+    nav{
+        .link{
+            text-transform: none;
+            text-decoration: none;
+            color: $color-secundario;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+    .idioma-y-login{
+        order: 3;
+        grid-column: 3/4;
+        align-self: self-start;
+        margin: 55px 0 55px 0;
+        gap: 0px;
+    }
+    .boton-busqueda {
+        display: none;
+    }
+}
+@media (min-width: 1200px) {      
+    header {
+        height: 150px;
+        width: 100vw;
+        background-color: $color-secundario;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 350px 1fr 300px;
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+        position: sticky;
+        top:0;
+        z-index: 100;
+        h1{
+            font-size: 1.4rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+    .logo{
+        width: 325px ;
+        height: 150px;
+        margin: 0;
+        box-sizing: border-box;
+        grid-column: 1/2;
+        display: inline-flex;
+        display: flex;
+        align-items: center;
+        text-transform: none;
+        text-decoration: none;
+        &-escudo{
+            width: 100px;
+            height: 100px;
+            background-image:url(../pictures/logo.jpg) ;
+            box-sizing: border-box;
+            }
+        &-nombre{
+            color: $color-primario;
+            text-align: center;
+            font-weight: bold;
+            width: 225px;
+            height: 100px;
+            box-sizing: border-box;
+            order: 1;
+            @include flex-center();
+        }
+    }
+    nav .link{
+        text-transform: none;
+        text-decoration: none;
+        color: $color-primario;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .barra-de-navegacion{
+        color: $color-primario;
+        margin: 10px;
+        box-sizing: border-box;
+        grid-column: 2/3;
+        display: inline-block;
+        display: flex;
+        gap: 40px;
+    }
+    .idioma-y-login{
+        height: 100px;
+        width: 300px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        grid-column: 3/4;
+        display: inline-flex;
+        margin: 20px;
+        box-sizing: border-box;
+    }
+    .boton{
+        &-busqueda{
+            width: 50px;
+            height: 50px;
+            background-image: url(../pictures/busqueda.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-color: $color-secundario;
+            border: solid 10px $color-secundario;
+            border-radius: 25%;
+            align-self: center;
+            box-sizing: border-box;
+        }
+        &-idioma{
+            width: 130px;
+            text-align: center;
+            @include flex-center();
+            border-radius: 25%;
+            margin: 10px;
+        }
+        &-login{
+            width: 130px;
+            text-align: center;
+            margin: 10px;
+            @include flex-center();
+            border-radius: 25%;
+        }
+    }    
+}

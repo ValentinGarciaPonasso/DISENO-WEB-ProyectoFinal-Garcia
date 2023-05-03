@@ -1,0 +1,265 @@
+// VERSION MOBILE - VERSION MOBILE - VERSION MOBILE
+// VERSION MOBILE - VERSION MOBILE - VERSION MOBILE
+// VERSION MOBILE - VERSION MOBILE - VERSION MOBILE
+@media (min-width:300px) and (max-width: 479px){
+    .contactos{        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        background-color: #F2F2F2;
+        h2{        
+            text-align: center;
+            color: black;
+            font-family: "Anton";
+            font-size: 2.5rem;
+            height: 50px;
+            width: 500px;
+            max-width: 100%;
+            max-height: 100%;
+            text-shadow: -2px 0px 0 rgb(114, 165, 114);
+            justify-self: center;
+            padding: 10px;
+            margin: 50px 0px 50px 0px;
+            align-self: center;
+        }
+        // NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS
+        &-presentacion{
+            background-color: $color-primario;
+            &-nav{        
+                position: sticky;
+                border: solid black 5px;
+            }
+        }
+        // SECCION DIRECCIONES Y TELEFONOS - SECCION DIRECCIONES Y TELEFONOS SECCION DIRECCIONES Y TELEFONOS
+        &-direciones{
+            padding: 20px 0px 20px 0px;            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;  
+            &-articulos{
+                gap:100px;
+            }
+            h3{
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: $color-primario;
+                padding: 20px 0px 20px 10px;
+            }
+            &-articulos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS */
+        &-formulario{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            background-color: $color-primario;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 5%;
+            h3{      
+                padding: 20px 0px 20px 20px;
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: black;
+                margin: 20px 0px 20px 20px;
+            }
+            &-form{
+                padding: 20px 0px 20px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+        }
+    }    
+}
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+/* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
+@media (min-width:480px) and (max-width: 1199px){    
+    .contactos{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: #F2F2F2;
+        h2{        
+            text-align: center;
+            color: black;
+            font-family: "Anton";
+            font-size: 2.5rem;
+            height: 50px;
+            width: 500px;
+            max-width: 100%;
+            max-height: 100%;
+            text-shadow: -2px 0px 0 rgb(114, 165, 114);
+            justify-self: center;
+            padding: 10px;
+            margin: 50px 0px 50px 0px;
+            align-self: center;
+        }
+        // NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS
+        &-presentacion{
+            background-color: $color-primario;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            &-nav{        
+                position: sticky;
+                border: solid black 5px;
+            }
+        }
+        // SECCION DIRECCIONES Y TELEFONOS - SECCION DIRECCIONES Y TELEFONOS SECCION DIRECCIONES Y TELEFONOS
+        &-direciones{
+            padding: 20px 0px 20px 0px;            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            h3{
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: $color-primario;
+                padding: 20px 0px 20px 10px;
+            }
+            &-articulos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS- SECCION CONTACTENOS */
+        &-formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            background-color: $color-primario;
+            margin: 20px;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 5%;
+            h3{      
+                padding: 20px 0px 20px 20px;
+                /* text-align: center; */
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: black;
+                margin: 20px 0px 20px 10px;
+            }
+            &-form{
+                padding: 20px 0px 20px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+/* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
+@media (min-width:1200px){
+    .contactos{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: #F2F2F2;
+        h2{        
+            text-align: center;
+            color: black;
+            font-family: "Anton";
+            font-size: 2.5rem;
+            height: 50px;
+            width: 500px;
+            max-width: 100%;
+            max-height: 100%;
+            text-shadow: -2px 0px 0 rgb(114, 165, 114);
+            justify-self: center;
+            padding: 10px;
+            margin: 50px 0px 50px 0px;
+            align-self: center;position: relative;
+            animation-name: nav-move;
+            animation-duration: 5s;
+        }
+        @keyframes nav-move{
+            0% {left:0px}
+            25%{left:100px}
+            50%{left:0px}
+            75%{left:-100px}
+            100%{left: 0px;}
+        }
+        // NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS
+        &-presentacion{
+            background-color: $color-primario;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            &-nav{        
+                position: sticky;
+                border: solid black 5px;
+            }
+        }
+        // SECCION DIRECCIONES Y TELEFONOS - SECCION DIRECCIONES Y TELEFONOS SECCION DIRECCIONES Y TELEFONOS
+        &-direciones{
+            padding: 20px 0px 20px 0px;
+            background-color: #F2F2F2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            h3{
+                font-size: 2.0rem;
+                font-weight: bold;
+                color: darkgreen;
+                padding: 20px 0px 20px 10px;
+                grid-column: 1/4;
+                margin-left: 50px;
+            }
+            &-articulos{
+                width: 100vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+            }        
+        }
+        /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS- SECCION CONTACTENOS */
+        &-formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            background-color: $color-primario;
+            margin: 20px;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 5%;
+            h3{      
+                padding: 20px 0px 20px 20px;
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: $color-secundario;
+                margin: 20px 0px 20px 20px;
+            }
+            &-form{
+                form{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 100px 100px 100px 400px 100px ;
+                    gap: 50px 50px;
+                }                
+            }
+        }
+    }
+}

@@ -9,29 +9,19 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
-    <header class="header" id="header-index">
-        
-        
-        
-
+    <header id="header-index">
         <!-- LOGO Y NOMBRE -->
-
-        
-        <a href="../index.html" class="logo-y-nombre">
-            <div class="nombre">
+        <a href="../index.html" class="logo">
+            <div class="logo-nombre">
                 <h1>CLUB ATLETICO FAVOR REINTENTAR</h1>
             </div>                
-            <div class="logo">
+            <div class="logo-escudo">
                 <!-- <figure>
                     <img class="logo-imagen" src="./pictures/logo.jpg" alt="">
                 </figure> -->
             </div>    
-        </a>                                                       
-        
-        
+        </a> 
         <!-- BARRA DE NAVEGACIÓN -->
-
         <div class="barra-de-navegacion">
             <nav class="navbar navbar-expand-xl">
                 <div class="container-fluid">
@@ -59,31 +49,22 @@
                     <a class="link" href="">Entradas</a>
                 </div>
             </nav> -->
-
         <!-- BOTONES DE IDIOMA Y LOGIN -->
-
         <div class="idioma-y-login">
             <!-- BOTON DE BUSQUEDA-->
             <button type="button" class="btn boton-busqueda"></button>
             <button type="button" class="btn btn-outline-success boton-idioma">ES</button>
             <button type="button" class="btn btn-outline-danger boton-login">ENTRAR</button>  
-            <!-- <div class="boton-busqueda"></div>         -->
-            <!-- <span class="boton-idioma">ES</span> -->
-            <!-- <span class="boton-login">ENTRAR</span> -->
-        </div>
-        
+        </div>        
     </header>
-
-
-    <main class="main-contactos">
-
+    <!-- MAIN MAIN MAIN MAIN -->
+    <main class="contactos">
         <!-- PRESENTACION DE LA PAGINA -->
-        <section class="presentacion-contactos">
+        <section class="contactos-presentacion">
             <!-- TITULO DE PAGINA -->
             <h2 id="inicio">CONTACTOS</h2>
             <!-- BARRA DE NAVEGACION DE PAGINAS DEL FOOTER -->
-
-            <ul class="nav justify-content-center nav-contactos">
+            <ul class="nav justify-content-center contactos-presentacion-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="./contactos.html">CONTACTOS</a>
                 </li>
@@ -96,61 +77,52 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">TÉRMINOS LEGALES</a>
                 </li>
-            </ul>
-
-            
+            </ul>            
         </section>
-        
-        
         <!-- SECCION CON DIRECCIONES Y TELÉFONOS -->
-        <section class="direcicones-contactos">
+        <section class="contactos-direciones">
             <!-- TITULO DE LA SECCION -->
             <h3>DIRECCIONES Y TELÉFONOS</h3>
             <!-- ARTICULOS -->
-            <div class="articulos-contactos">
-                <article class="carta-contactos">
+            <div class="contactos-direciones-articulos">
+                <article class="carta">
                     <h4>Sede Social</h4>
                     <p>DIRECCION:</p>
                     <p>TELEFONO:</p>
                     <P>MAIL:</P>
                     <P>HORARIO:</P>
-                    <div class="mapa-contactos">
+                    <div class="carta-mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3134.3855139114407!2d-5.717351081451866!3d-15.927166615766827!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1679373866898!5m2!1ses-419!2suy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </article>
-
-                <article class="carta-contactos">
+                <article class="carta">
                     <h4>Estadio</h4>
                     <p>DIRECCION:</p>
                     <p>TELEFONO:</p>
                     <P>MAIL:</P>
                     <P>HORARIO:</P>
-                    <div class="mapa-contactos">
+                    <div class="carta-mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3134.3855139114407!2d-5.717351081451866!3d-15.927166615766827!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1679373866898!5m2!1ses-419!2suy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </article>
-
-                <article class="carta-contactos">
+                <article class="carta">
                     <h4>Complejo deportivo</h4>
                     <p>DIRECCION:</p>
                     <p>TELEFONO:</p>
                     <P>MAIL:</P>
                     <P>HORARIO:</P>
-                    <div class="mapa-contactos">
+                    <div class="carta-mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3134.3855139114407!2d-5.717351081451866!3d-15.927166615766827!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1679373866898!5m2!1ses-419!2suy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </article>
             </div>
-        </section>
-
-        
-
+        </section> 
         <!-- FORMULARIO PARA CONTACTO -->
-        <section class="formulario-contactos">
+        <section class="contactos-formulario">
             <!-- TITULO DE LA SECCIÓN -->
             <h3>Contáctenos</h3>
             <!-- FORMULARIO  -->
-            <div class="form-contactos">                
+            <div class="contactos-formulario-form">                
                 <form action="">
                     <div class="tarjeta-contacto">
                         <label for="nombre">Nombre y Apellido</label>
@@ -181,7 +153,7 @@
                         <label for="telefono">Teléfono</label>
                         <input type="number" name="telefono" id="telefono">
                     </div>
-                    <div class="tarjeta-contacto">
+                    <div class="tarjeta-contacto asunto-enviar-y-resetear">
                         <label for="asunto">Asunto del mensaje</label>
                         <select name="asunto" id="asunto">
                             <option value="mensaje">Mensaje</option>
@@ -201,35 +173,22 @@
                 </form>
             </div>
         </section>
-
-
-        
-
     </main>
-
-
     <!-- FOOTER FOOTER FOOTER -->
-
     <footer class="footer">
-
         <!-- MAPA -->
-
-        <div class="mapa-footer">
+        <div class="footer-mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3134.3855139114407!2d-5.717351081451866!3d-15.927166615766827!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1679373866898!5m2!1ses-419!2suy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
         <!-- BARRA DEL FOOTER -->
-
-        <div class="barra-footer">
+        <div class="footer-barra">
             <a class="link" href="./contactos.html">Contactos</a>
             <a class="link" href="./trabaja-con-nosotros.html">Trabaja con nosotros</a>
             <a class="link" href="">FAQ'S</a>
             <a class="link" href="#inicio">Inicio ↑</a>
         </div>
-
         <!-- REDES SOCIALES -->
-
-        <div class="rrss">
+        <div class="footer-rrss">
             <div>
                 <a href="https://www.facebook.com/" target="blank">
                     <figure>
@@ -237,7 +196,6 @@
                     </figure>
                 </a>            
             </div>
-
             <div>
                 <a href="https://twitter.com/home" target="blank">
                     <figure>
@@ -245,7 +203,6 @@
                     </figure>
                 </a>            
             </div>
-
             <div>
                 <a href="https://www.instagram.com/" target="blank">
                     <figure>
@@ -253,20 +210,15 @@
                     </figure>
                 </a>            
             </div>
-
             <div>
                 <a href="https://www.youtube.com/" target="blank">
                     <figure>
                         <img src="../pictures/youtube.jpg" alt="youtube">
                     </figure>
-                </a>
-            
+                </a>            
             </div>
-
-
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

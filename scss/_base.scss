@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Rubik";
+    src: url(../fonts/rubikiso.ttf);
+    font-family: "Anton";
+    src: url(../fonts/Anton-Regular.ttf);
+    font-family: "Libre Baskerville-Bold";
+    src: url(../fonts/LibreBaskerville-Bold.ttf);
+    font-family: "Kapra-Bold";
+    src: url(../fonts/Kapra-Bold.otf);
+}
+$color-primario: rgba(5, 107, 5, 0.993);
+$color-secundario: black;

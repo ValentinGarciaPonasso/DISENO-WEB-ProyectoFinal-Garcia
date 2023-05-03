@@ -1,0 +1,52 @@
+
+.subtitulo-index{
+    text-align: center;
+    color: $color-secundario;
+    font-family: "Anton";
+    font-size: 2.5rem;
+    height: 80px;
+    width: 100vw;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    h2{        
+        margin-top: 20px;
+        position: relative;
+        animation-name: nav-move;
+        animation-duration: 5s;
+    }
+    @keyframes nav-move{
+        0% {left:0px}
+        25%{left:100px}
+        50%{left:0px}
+        75%{left:-100px}
+        100%{left: 0px;}
+    }
+}
+
+li .nav-link{
+    color: black;
+    font-weight: bold;
+    font-size: 1.0rem;
+    padding: 0px;
+    margin: 5px      
+}
+
+@media (min-width: 300px) and (max-width: 1199px){
+    .link{
+        text-transform: none;
+        text-decoration: none;
+        color: $color-primario;
+        font-size: 1.0rem;
+        font-weight: bold;
+    }
+}
+@media (min-width: 1200px){
+    .link{
+        text-transform: none;
+        text-decoration: none;
+        color: $color-primario;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+

@@ -1,0 +1,15 @@
+.boton-leer-mas{
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 130px;
+    height: 70px;
+    border-radius: 15%;
+    margin: 10px;
+    text-align: center;
+    @include flex-center();
+    color: $color-secundario;
+    background-color: $color-primario ;
+    box-sizing: border-box;
+    border: solid 5px $color-secundario;
+}
+
