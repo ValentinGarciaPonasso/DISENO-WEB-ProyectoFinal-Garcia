@@ -549,7 +549,7 @@ li .nav-link {
     justify-content: center;
     align-items: center;
   }
-  .main-destacados .carousel-item h5 {
+  .main-destacados .carousel-item h4 {
     font-size: 35px;
     font-family: "Kapra-Bold";
     text-transform: uppercase;

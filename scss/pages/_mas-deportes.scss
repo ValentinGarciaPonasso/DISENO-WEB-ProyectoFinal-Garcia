@@ -1,23 +1,25 @@
 /* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
 /* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
 /* VERSIÓN MOBILE - VERSIÓN MOBILE - VERSIÓN MOBILE */
-@media (min-width:300px) and (max-width: 479px){    
-    .mas-deporte{        
+@media (min-width:300px) and (max-width: 479px) {
+    .mas-deporte {
         // background-color: #F2F2F2;
-        background: rgb(6,15,5);
-        background: linear-gradient(270deg, rgba(6,15,5,1) 0%, rgba(18,120,26,1) 41%, rgba(58,136,8,1) 100%);
+        background: rgb(6, 15, 5);
+        background: linear-gradient(270deg, rgba(6, 15, 5, 1) 0%, rgba(18, 120, 26, 1) 41%, rgba(58, 136, 8, 1) 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+
         /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
-        &-nav{            
-        background-color: $color-primario;
-        position: sticky;
-        border: solid black 5px;
+        &-nav {
+            background-color: $color-primario;
+            position: sticky;
+            border: solid black 5px;
         }
+
         // SUBTITULOS SUBTITULOS SUBTITULOS
-        h2{
+        h2 {
             text-align: center;
             color: $color-secundario;
             font-family: "Anton";
@@ -32,163 +34,190 @@
             margin: 50px 0px 50px 0px;
             align-self: center;
         }
+
         // SECCION BASQUETBOL - SECCION BASQUETBOL - SECCION BASQUETBOL
-        &-basquetbol{
+        &-basquetbol {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             padding: 10px 0px 10px 0px;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                     padding: 20px 0px 20px 10px;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{                
+
+            &-staff {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                &-plantel{
+
+                &-plantel {
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     box-shadow: 10px 10px 10px black;
                 }
             }
         }
+
         // SECCION RUGBY SECCION RUGBY SECCION RUGBY SECCION RUGBY
-        &-rugby{
+        &-rugby {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             padding: 10px 0px 10px 0px;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{                
+
+            &-staff {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                &-plantel{
+
+                &-plantel {
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     box-shadow: 10px 10px 10px black;
                 }
             }
         }
+
         // SECCION ATLETISMO SECCION ATLETISMO SECCION ATLETISMO SECCION ATLETISMO
-        &-atletismo{
+        &-atletismo {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             padding: 10px 0px 20px 0px;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{                
+
+            &-staff {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                &-plantel{
+
+                &-plantel {
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     box-shadow: 10px 10px 10px black;
                 }
             }
         }
     }
 }
+
 /* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
 /* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
 /* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
-@media (min-width:480px) and (max-width: 1199px){      
-    .mas-deporte{        
+@media (min-width:480px) and (max-width: 1199px) {
+    .mas-deporte {
         // background-color: #F2F2F2;
-        background: rgb(6,15,5);
-        background: linear-gradient(270deg, rgba(6,15,5,1) 0%, rgba(18,120,26,1) 41%, rgba(58,136,8,1) 100%);
+        background: rgb(6, 15, 5);
+        background: linear-gradient(270deg, rgba(6, 15, 5, 1) 0%, rgba(18, 120, 26, 1) 41%, rgba(58, 136, 8, 1) 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+
         /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
-        &-nav{            
-        background-color: $color-primario;
-        position: sticky;
-        border: solid black 5px;
+        &-nav {
+            background-color: $color-primario;
+            position: sticky;
+            border: solid black 5px;
         }
+
         // SUBTITULOS SUBTITULOS SUBTITULOS
-        h2{
+        h2 {
             text-align: center;
             color: $color-secundario;
             font-family: "Anton";
@@ -203,157 +232,183 @@
             margin: 50px 0px 50px 0px;
             align-self: center;
         }
+
         // SECCION BASQUETBOL - SECCION BASQUETBOL - SECCION BASQUETBOL
-        &-basquetbol{
+        &-basquetbol {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             padding: 10px 0px 10px 0px;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{                
+
+            &-staff {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                &-plantel{
+
+                &-plantel {
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     box-shadow: 10px 10px 10px black;
                 }
             }
         }
+
         // SECCION RUGBY SECCION RUGBY SECCION RUGBY SECCION RUGBY
-        &-rugby{
+        &-rugby {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             padding: 10px 0px 10px 0px;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{                
+
+            &-staff {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                &-plantel{
+
+                &-plantel {
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     box-shadow: 10px 10px 10px black;
                 }
             }
         }
+
         // SECCION ATLETISMO SECCION ATLETISMO SECCION ATLETISMO SECCION ATLETISMO
-        &-atletismo{
+        &-atletismo {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             padding: 10px 0px 20px 0px;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{                
+
+            &-staff {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                &-plantel{
+
+                &-plantel {
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     box-shadow: 10px 10px 10px black;
                 }
             }
         }
     }
 }
+
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-@media (min-width:1200px){
-    .mas-deporte{
+@media (min-width:1200px) {
+    .mas-deporte {
         // background-color: #F2F2F2;
-        background: rgb(6,15,5);
-        background: linear-gradient(270deg, rgba(6,15,5,1) 0%, rgba(18,120,26,1) 41%, rgba(58,136,8,1) 100%);
+        background: rgb(6, 15, 5);
+        background: linear-gradient(270deg, rgba(6, 15, 5, 1) 0%, rgba(18, 120, 26, 1) 41%, rgba(58, 136, 8, 1) 100%);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-content: center;
+
         /* BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL - BARRA DE NAVEGACION FUTBOL */
-        &-nav{
+        &-nav {
             background-color: $color-primario;
             position: sticky;
             border: solid black 5px;
@@ -361,7 +416,8 @@
             width: 80vw;
             align-self: center;
         }
-        h2{
+
+        h2 {
             text-align: center;
             color: $color-secundario;
             font-family: "Anton";
@@ -376,7 +432,8 @@
             grid-column: 1/3;
             grid-row: 1/2;
         }
-        &-basquetbol{
+
+        &-basquetbol {
             margin: 20px 0 10px 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -386,51 +443,59 @@
             justify-items: center;
             justify-content: space-evenly;
             align-content: space-evenly;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{
+
+            &-staff {
                 max-width: 40vw;
                 height: 800px;
                 display: grid;
                 grid-template-rows: 40px 1fr 40px 1fr;
                 gap: 20px;
+
                 // align-items: center;
-                h3{
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
-                    padding: 20px 0px 20px 10px; 
+                    padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                     text-align: center;
-                    align-self: center;                   
+                    align-self: center;
                 }
-                &-plantel{
+
+                &-plantel {
                     width: 300px;
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     width: 300px;
                     box-shadow: 10px 10px 10px black;
                 }
             }
         }
-        &-rugby{
+
+        &-rugby {
             margin: 20px 0 10px 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -440,51 +505,59 @@
             justify-items: center;
             justify-content: space-evenly;
             align-content: space-evenly;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{
+
+            &-staff {
                 max-width: 40vw;
                 height: 800px;
                 display: grid;
                 grid-template-rows: 40px 1fr 40px 1fr;
                 gap: 20px;
+
                 // align-items: center;
-                h3{
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
-                    padding: 20px 0px 20px 10px; 
+                    padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                     text-align: center;
-                    align-self: center;                   
+                    align-self: center;
                 }
-                &-plantel{
+
+                &-plantel {
                     width: 300px;
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     width: 300px;
                     box-shadow: 10px 10px 10px black;
                 }
             }
-        }  
-        &-atletismo{
+        }
+
+        &-atletismo {
             margin: 20px 0 10px 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -494,49 +567,56 @@
             justify-items: center;
             justify-content: space-evenly;
             align-content: space-evenly;
-            &-noticias{
+
+            &-noticias {
                 display: grid;
                 grid-template-rows: 40px 1fr 1fr 180px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
                 gap: 10px;
-                h3{
+
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
                     padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                 }
-                .noticias-mas-deporte{
+
+                .noticias-mas-deporte {
                     margin: 0;
                 }
             }
-            &-staff{
+
+            &-staff {
                 max-width: 40vw;
                 height: 800px;
                 display: grid;
                 grid-template-rows: 40px 1fr 40px 1fr;
                 gap: 20px;
+
                 // align-items: center;
-                h3{
+                h3 {
                     font-size: 1.7rem;
                     font-weight: bold;
                     color: $color-primario;
-                    padding: 20px 0px 20px 10px; 
+                    padding: 20px 0px 20px 10px;
                     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
                     text-align: center;
-                    align-self: center;                   
+                    align-self: center;
                 }
-                &-plantel{
+
+                &-plantel {
                     width: 300px;
                     box-shadow: 10px 10px 10px black;
                 }
-                &-ct{
+
+                &-ct {
                     width: 300px;
                     box-shadow: 10px 10px 10px black;
                 }
             }
-        }      
+        }
     }
 }

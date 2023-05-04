@@ -1,10 +1,11 @@
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .boton {
         &-idioma {
             width: 40px;
             height: 40px;
             box-sizing: border-box;
         }
+
         &-login {
             width: 40px;
             height: 40px;
@@ -14,7 +15,8 @@
         }
     }
 }
-@media (min-width: 300px) and (max-width: 1199px){
+
+@media (min-width: 300px) and (max-width: 1199px) {
     header {
         height: 150px;
         width: 100vw;
@@ -27,14 +29,16 @@
         align-items: center;
         box-sizing: border-box;
         position: sticky;
-        top:0;
+        top: 0;
         z-index: 100;
+
         h1 {
             font-size: 0rem;
-        }      
+        }
     }
+
     .logo {
-        width: 150px ;
+        width: 150px;
         height: 150px;
         margin: 0;
         align-self: self-start;
@@ -43,19 +47,22 @@
         text-transform: none;
         text-decoration: none;
         order: 2;
-        &-escudo{
+
+        &-escudo {
             width: 100px;
             height: 100px;
-            background-image:url(../pictures/logo.jpg) ;
+            background-image: url(../pictures/logo.jpg);
             box-sizing: border-box;
             margin: 25px;
         }
     }
-    .barra-de-navegacion{
+
+    .barra-de-navegacion {
         grid-column: 1/2;
-        order:1;
+        order: 1;
     }
-    .container-fluid{
+
+    .container-fluid {
         background-color: $color-primario;
         padding: 0px;
         border-radius: 15%;
@@ -65,11 +72,13 @@
         font-size: 1.5rem;
         font-weight: bold;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         background-color: $color-primario;
     }
-    nav{
-        .link{
+
+    nav {
+        .link {
             text-transform: none;
             text-decoration: none;
             color: $color-secundario;
@@ -77,18 +86,21 @@
             font-weight: bold;
         }
     }
-    .idioma-y-login{
+
+    .idioma-y-login {
         order: 3;
         grid-column: 3/4;
         align-self: self-start;
         margin: 55px 0 55px 0;
         gap: 0px;
     }
+
     .boton-busqueda {
         display: none;
     }
 }
-@media (min-width: 1200px) {      
+
+@media (min-width: 1200px) {
     header {
         height: 150px;
         width: 100vw;
@@ -101,15 +113,17 @@
         align-items: center;
         box-sizing: border-box;
         position: sticky;
-        top:0;
+        top: 0;
         z-index: 100;
-        h1{
+
+        h1 {
             font-size: 1.4rem;
             font-family: 'Times New Roman', Times, serif;
         }
     }
-    .logo{
-        width: 325px ;
+
+    .logo {
+        width: 325px;
         height: 150px;
         margin: 0;
         box-sizing: border-box;
@@ -119,13 +133,15 @@
         align-items: center;
         text-transform: none;
         text-decoration: none;
-        &-escudo{
+
+        &-escudo {
             width: 100px;
             height: 100px;
-            background-image:url(../pictures/logo.jpg) ;
+            background-image: url(../pictures/logo.jpg);
             box-sizing: border-box;
-            }
-        &-nombre{
+        }
+
+        &-nombre {
             color: $color-primario;
             text-align: center;
             font-weight: bold;
@@ -136,7 +152,8 @@
             @include flex-center();
         }
     }
-    nav .link{
+
+    nav .link {
         text-transform: none;
         text-decoration: none;
         color: $color-primario;
@@ -144,7 +161,8 @@
         font-weight: bold;
         text-align: center;
     }
-    .barra-de-navegacion{
+
+    .barra-de-navegacion {
         color: $color-primario;
         margin: 10px;
         box-sizing: border-box;
@@ -153,7 +171,8 @@
         display: flex;
         gap: 40px;
     }
-    .idioma-y-login{
+
+    .idioma-y-login {
         height: 100px;
         width: 300px;
         font-size: 1.2rem;
@@ -163,8 +182,9 @@
         margin: 20px;
         box-sizing: border-box;
     }
-    .boton{
-        &-busqueda{
+
+    .boton {
+        &-busqueda {
             width: 50px;
             height: 50px;
             background-image: url(../pictures/busqueda.jpg);
@@ -177,19 +197,21 @@
             align-self: center;
             box-sizing: border-box;
         }
-        &-idioma{
+
+        &-idioma {
             width: 130px;
             text-align: center;
             @include flex-center();
             border-radius: 25%;
             margin: 10px;
         }
-        &-login{
+
+        &-login {
             width: 130px;
             text-align: center;
             margin: 10px;
             @include flex-center();
             border-radius: 25%;
         }
-    }    
+    }
 }

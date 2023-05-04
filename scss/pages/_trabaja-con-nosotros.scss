@@ -1,14 +1,15 @@
 // VERSION MOBILE - VERSION MOBILE - VERSION MOBILE
 // VERSION MOBILE - VERSION MOBILE - VERSION MOBILE
 // VERSION MOBILE - VERSION MOBILE - VERSION MOBILE
-@media (min-width:300px) and (max-width: 479px){
-    .trabaja-con-nosotros{        
+@media (min-width:300px) and (max-width: 479px) {
+    .trabaja-con-nosotros {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-content: center;
-        background-color: #F2F2F2;     
-        h2{        
+        background-color: #F2F2F2;
+
+        h2 {
             text-align: center;
             color: $color-secundario;
             font-family: "Anton";
@@ -21,20 +22,23 @@
             padding: 10px;
             margin: 25px 0px 25px 0px;
         }
+
         // NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS
-        &-presentacion{
+        &-presentacion {
             background-color: $color-primario;
             display: flex;
             flex-direction: column;
             align-content: space-evenly;
-            justify-items: center;            
-            &-nav{        
+            justify-items: center;
+
+            &-nav {
                 position: sticky;
                 border: solid black 5px;
             }
         }
+
         /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS */
-        &-formulario{
+        &-formulario {
             margin: 20px;
             display: flex;
             flex-direction: column;
@@ -43,40 +47,45 @@
             background-color: $color-primario;
             box-shadow: 10px 10px 10px black;
             border-radius: 5%;
-            h3{      
+
+            h3 {
                 padding: 20px 0px 20px 20px;
                 font-size: 1.7rem;
                 font-weight: bold;
                 color: black;
                 margin: 20px 0px 20px 20px;
             }
-            &-form{
+
+            &-form {
                 padding: 20px 0px 20px 0px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-content: center;
                 align-items: center;
-                .cv{
-                    input{
+
+                .cv {
+                    input {
                         display: block;
-                    }                    
+                    }
                 }
             }
         }
     }
 }
+
 /* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
 /* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
 /* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET  */
-@media (min-width:480px) and (max-width: 1199px){    
-    .trabaja-con-nosotros{        
+@media (min-width:480px) and (max-width: 1199px) {
+    .trabaja-con-nosotros {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-content: center;
-        background-color: #F2F2F2;     
-        h2{        
+        background-color: #F2F2F2;
+
+        h2 {
             text-align: center;
             color: $color-secundario;
             font-family: "Anton";
@@ -90,20 +99,23 @@
             margin: 25px 0px 25px 0px;
             align-self: center;
         }
+
         // NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS - NAV DE CONTACTOS
-        &-presentacion{
+        &-presentacion {
             background-color: $color-primario;
             display: flex;
             flex-direction: column;
             align-content: space-evenly;
-            justify-items: center;            
-            &-nav{        
+            justify-items: center;
+
+            &-nav {
                 position: sticky;
                 border: solid black 5px;
             }
         }
+
         /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS */
-        &-formulario{
+        &-formulario {
             margin: 20px;
             display: flex;
             flex-direction: column;
@@ -112,35 +124,39 @@
             background-color: $color-primario;
             box-shadow: 10px 10px 10px black;
             border-radius: 5%;
-            h3{      
+
+            h3 {
                 padding: 20px 0px 20px 20px;
                 font-size: 1.7rem;
                 font-weight: bold;
                 color: black;
                 margin: 20px 0px 20px 20px;
             }
-            &-form{
+
+            &-form {
                 padding: 20px 0px 20px 0px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-content: center;
-                align-items: center;                
+                align-items: center;
             }
         }
     }
 }
+
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
-@media (min-width:1200px){
-    .trabaja-con-nosotros{        
+@media (min-width:1200px) {
+    .trabaja-con-nosotros {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         background-color: #F2F2F2;
-        h2{        
+
+        h2 {
             text-align: center;
             color: $color-secundario;
             font-family: "Anton";
@@ -152,34 +168,54 @@
             text-shadow: -2px 0px 0 rgb(114, 165, 114);
             padding: 10px;
             margin: 25px 0px 0px 0px;
-            align-self: center;position: relative;
+            align-self: center;
+            position: relative;
             animation-name: nav-move;
             animation-duration: 5s;
-            &:hover{
+
+            &:hover {
                 animation-name: nav-move;
                 animation-duration: 5s;
             }
         }
-        @keyframes nav-move{
-            0% {left:0px}
-            25%{left:100px}
-            50%{left:0px}
-            75%{left:-100px}
-            100%{left: 0px;}
+
+        @keyframes nav-move {
+            0% {
+                left: 0px
+            }
+
+            25% {
+                left: 100px
+            }
+
+            50% {
+                left: 0px
+            }
+
+            75% {
+                left: -100px
+            }
+
+            100% {
+                left: 0px;
+            }
         }
+
         // NAV DE TRABAJA CON NOSOSTROS - NAV DE TRABAJA CON NOSOSTROS
-        &-presentacion{
+        &-presentacion {
             background-color: $color-primario;
             display: flex;
             flex-direction: column;
             align-content: center;
-            &-nav{        
+
+            &-nav {
                 position: sticky;
                 border: solid black 5px;
             }
-        }        
+        }
+
         /* SECCION CONTACTENOS - SECCION CONTACTENOS - SECCION CONTACTENOS- SECCION CONTACTENOS */
-        &-formulario{
+        &-formulario {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -188,24 +224,27 @@
             margin: 20px;
             box-shadow: 10px 10px 10px black;
             border-radius: 5%;
-            h3{      
+
+            h3 {
                 padding: 20px 0px 20px 20px;
                 font-size: 1.7rem;
                 font-weight: bold;
                 color: $color-secundario;
                 margin: 20px 0px 20px 20px;
             }
-            &-form{
-                form{
+
+            &-form {
+                form {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 100px 100px 100px 100px 100px ;
-                    gap: 50px 50px;                    
-                    .enviar-y-resetear{
+                    grid-template-rows: 100px 100px 100px 100px 100px;
+                    gap: 50px 50px;
+
+                    .enviar-y-resetear {
                         grid-column: 1/3;
                         grid-row: 5/6;
                     }
-                }                
+                }
             }
         }
     }

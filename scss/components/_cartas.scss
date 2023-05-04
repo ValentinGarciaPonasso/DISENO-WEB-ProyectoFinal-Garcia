@@ -1,6 +1,6 @@
 // CARTA DE DIRECCIONES - CARTA DE DIRECCIONES - CARTA DE DIRECCIONES
-@media (max-width: 1199px){
-    .carta{
+@media (max-width: 1199px) {
+    .carta {
         max-width: 400px;
         min-width: 300px;
         height: 500px;
@@ -12,26 +12,30 @@
         background-color: $color-primario;
         box-shadow: 10px 10px 10px black;
         border-radius: 5%;
-        h4{
+
+        h4 {
             font-size: 1.5rem;
             font-weight: bold;
             color: $color-secundario;
             padding: 20px 0px 20px 20px;
         }
-        p{
+
+        p {
             color: $color-secundario;
             padding: 0px 0px 0px 20px;
         }
-        &-mapa{
+
+        &-mapa {
             width: 250px;
             height: 250px;
             align-self: center;
         }
     }
 }
+
 // MAPA PARA VERSION DESKTOP
-@media (min-width:1200px){
-    .carta{
+@media (min-width:1200px) {
+    .carta {
         width: 400px;
         height: 700px;
         display: flex;
@@ -42,35 +46,40 @@
         border-radius: 5%;
         // border: black 5px solid;
         box-sizing: border-box;
-        h4{
+
+        h4 {
             font-size: 1.5rem;
             font-weight: bold;
             color: $color-secundario;
             padding: 20px 0px 20px 20px;
             box-sizing: border-box;
         }
-        p{
+
+        p {
             color: $color-secundario;
             padding: 0px 0px 0px 20px;
             box-sizing: border-box;
         }
-        &-mapa{
+
+        &-mapa {
             width: 350px;
             height: 350px;
             align-self: center;
         }
     }
 }
+
 // TARJETA DE FORMULARIO CONTACTOS - TARJETA DE FORMULARIO CONTACTOS
-@media (max-width: 1199px){
-    .tarjeta-contacto{
+@media (max-width: 1199px) {
+    .tarjeta-contacto {
         font-weight: bold;
         color: black;
-        width: 80vw;        
+        width: 80vw;
         display: grid;
         grid-template-rows: 40px 40px;
         align-items: center;
-        &-mensaje{
+
+        &-mensaje {
             height: 300px;
             font-weight: bold;
             color: black;
@@ -78,27 +87,32 @@
             display: grid;
             grid-template-rows: 40px 40px 1fr;
             align-items: flex-start;
-            textarea{
+
+            textarea {
                 background-color: rgb(123, 182, 123);
             }
         }
-        input{
+
+        input {
             background-color: rgb(123, 182, 123);
         }
-        select{
+
+        select {
             background-color: rgb(123, 182, 123);
         }
     }
 }
-@media (min-width:1200px){
-    .tarjeta-contacto{
+
+@media (min-width:1200px) {
+    .tarjeta-contacto {
         width: 40vw;
         font-weight: bold;
         color: black;
         display: grid;
         grid-template-rows: 40px 40px;
         justify-self: center;
-        &-mensaje{
+
+        &-mensaje {
             height: 300px;
             font-weight: bold;
             color: black;
@@ -106,61 +120,71 @@
             display: grid;
             grid-template-rows: 40px 300px;
             justify-self: center;
-            textarea{
+
+            textarea {
                 background-color: rgb(123, 182, 123);
             }
         }
-        select{
+
+        select {
             background-color: rgb(123, 182, 123);
         }
-        input{
+
+        input {
             background-color: rgb(123, 182, 123);
             // align-self: center;
         }
     }
-    .enviar-y-resetear{
+
+    .enviar-y-resetear {
         grid-column: 2/3;
         grid-row: 5/6;
         justify-self: center;
-        align-self: center;        
+        align-self: center;
     }
 }
+
 // TARJETA PERSONAS - TARJETA PERSONAS - TARJETA PERSONAS
-.fotos-personas{
-    :hover{
-        transform: scale(1.2,1.2);
+.fotos-personas {
+    :hover {
+        transform: scale(1.2, 1.2);
     }
-    img{
+
+    img {
         max-width: 100%;
         max-height: 100%;
         box-shadow: 10px 10px 10px black;
     }
 }
+
 // TARJETAS DE NOTICIAS DEL INDEX
-.noticias-index{
+.noticias-index {
     max-width: 500px;
     min-width: 300px;
-    margin:10px;
+    margin: 10px;
     height: 300px;
     border: solid black 5px;
     padding: 5px;
     background-color: $color-secundario;
     color: $color-primario;
-    &-titulo{    
-        font-size: 1.7rem; 
-    }    
+
+    &-titulo {
+        font-size: 1.7rem;
+    }
 }
+
 // TARJETAS DE NOTICIAS DE MAS DEPORTE
-.noticias-mas-deporte{
+.noticias-mas-deporte {
     max-width: 500px;
     min-width: 300px;
-    margin:10px;
+    margin: 10px;
     height: 300px;
     border: solid black 5px;
     padding: 5px;
     background-color: $color-secundario;
     color: $color-primario;
-    h4{
-        font-size: 2.5rem;    
+
+    h4 {
+        font-size: 2.5rem;
     }
 }

@@ -1,19 +1,21 @@
-@media (min-width: 300px) and (max-width: 1199px){
-    .footer{
+@media (min-width: 300px) and (max-width: 1199px) {
+    .footer {
         box-sizing: border-box;
-        background-color:rgba(16,16,16,255);
-        height: 800px ;
+        background-color: rgba(16, 16, 16, 255);
+        height: 800px;
         width: 100vw;
         display: grid;
         grid-template-rows: 400px 1fr 1fr;
         justify-items: center;
         align-items: center;
-        &-mapa{
+
+        &-mapa {
             border: solid $color-primario 5px;
             width: 300px;
-            height: 300px;    
+            height: 300px;
         }
-        &-barra{
+
+        &-barra {
             width: 100vw;
             color: $color-primario;
             font-size: 1.0rem;
@@ -27,7 +29,8 @@
             justify-content: space-evenly;
             gap: 5px;
         }
-        &-rrss{
+
+        &-rrss {
             width: 100vw;
             height: 100px;
             display: flex;
@@ -36,22 +39,25 @@
         }
     }
 }
+
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */
 @media (min-width: 1200px) {
-    .footer{
-        background-color:rgba(16,16,16,255);
-        height: 400px ;
-        width: 100vw;    
+    .footer {
+        background-color: rgba(16, 16, 16, 255);
+        height: 400px;
+        width: 100vw;
         padding: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &-mapa{
+
+        &-mapa {
             border: solid $color-primario 5px;
             width: 300px;
             height: 300px;
         }
-        &-barra{        
+
+        &-barra {
             color: $color-primario;
             font-size: 1.3rem;
             font-weight: bold;
@@ -63,7 +69,8 @@
             justify-content: space-between;
             gap: 40px;
         }
-        &-rrss{
+
+        &-rrss {
             width: 70px;
             height: 300px;
             justify-self: end;
