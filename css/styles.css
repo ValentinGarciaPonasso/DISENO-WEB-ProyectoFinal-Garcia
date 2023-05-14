@@ -835,7 +835,7 @@ li .nav-link {
     align-items: center;
   }
   .main-proximos-partidos-imagenes {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-around;
   }
@@ -887,7 +887,7 @@ li .nav-link {
     align-items: center;
   }
   .main-palmares-trofeos {
-    width: 99vw;
+    width: 99%;
     height: 220px;
     display: flex;
     flex-direction: row;
@@ -1189,7 +1189,7 @@ li .nav-link {
   .futbol-plantel-y-staff {
     display: flex;
     flex-direction: column;
-    /* GRID DE CUERPO TECNICO DEL PLANTEL */
+    /* GRID  DEL PLANTEL */
     /* GRID DE CUERPO TECNICO DEL PLANTEL */
   }
   .futbol-plantel-y-staff h3 {
@@ -1212,14 +1212,14 @@ li .nav-link {
     display: grid;
     grid-template-columns: repeat(5, 200px);
     grid-template-rows: repeat(300px, 5);
-    gap: 100px 50px;
+    gap: 100px 40px;
     justify-content: center;
   }
   .futbol-plantel-y-staff-cuerpo-tecnico {
     margin: 50px 0px 50px 0px;
     display: grid;
     grid-template-columns: repeat(5, 200px);
-    gap: 100px 50px;
+    gap: 100px 40px;
     justify-content: center;
   }
   .futbol-tabla {
@@ -1494,7 +1494,7 @@ li .nav-link {
     margin-left: 50px;
   }
   .contactos-direciones-articulos {
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;

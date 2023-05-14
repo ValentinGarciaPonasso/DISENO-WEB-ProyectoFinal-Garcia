@@ -376,7 +376,7 @@
             align-items: center;
 
             &-imagenes {
-                width: 100vw;
+                width: 100%;
                 display: flex;
                 justify-content: space-around;
             }
@@ -437,7 +437,7 @@
             align-items: center;
 
             &-trofeos {
-                width: 99vw;
+                width: 99%;
                 height: 220px;
                 display: flex;
                 flex-direction: row;
