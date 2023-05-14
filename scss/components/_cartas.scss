@@ -33,10 +33,10 @@
     }
 }
 
-// MAPA PARA VERSION DESKTOP
+
 @media (min-width:1200px) {
     .carta {
-        width: 400px;
+        width: 350px;
         height: 700px;
         display: flex;
         flex-direction: column;
@@ -62,8 +62,8 @@
         }
 
         &-mapa {
-            width: 350px;
-            height: 350px;
+            width: 280px;
+            height: 280px;
             align-self: center;
         }
     }
@@ -147,13 +147,14 @@
 // TARJETA PERSONAS - TARJETA PERSONAS - TARJETA PERSONAS
 .fotos-personas {
     :hover {
-        transform: scale(1.2, 1.2);
+        transform: scale(1.1, 1.1);
     }
-
+    box-sizing: border-box;
     img {
         max-width: 100%;
         max-height: 100%;
-        box-shadow: 10px 10px 10px black;
+        box-shadow: 10px 10px 10px black;          
+        background-size: cover;      
     }
 }
 
@@ -183,6 +184,7 @@
     padding: 5px;
     background-color: $color-secundario;
     color: $color-primario;
+    overflow: auto;
 
     h4 {
         font-size: 2.5rem;

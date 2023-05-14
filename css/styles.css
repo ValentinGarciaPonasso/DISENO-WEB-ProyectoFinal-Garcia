@@ -64,7 +64,7 @@
 }
 @media (min-width: 1200px) {
   .carta {
-    width: 400px;
+    width: 350px;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -87,8 +87,8 @@
     box-sizing: border-box;
   }
   .carta-mapa {
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
     align-self: center;
   }
 }
@@ -154,13 +154,17 @@
     align-self: center;
   }
 }
+.fotos-personas {
+  box-sizing: border-box;
+}
 .fotos-personas :hover {
-  transform: scale(1.2, 1.2);
+  transform: scale(1.1, 1.1);
 }
 .fotos-personas img {
   max-width: 100%;
   max-height: 100%;
   box-shadow: 10px 10px 10px black;
+  background-size: cover;
 }
 
 .noticias-index {
@@ -186,6 +190,7 @@
   padding: 5px;
   background-color: black;
   color: rgba(5, 107, 5, 0.993);
+  overflow: auto;
 }
 .noticias-mas-deporte h4 {
   font-size: 2.5rem;
@@ -282,7 +287,7 @@
 @media (min-width: 1200px) {
   header {
     height: 150px;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     top: 0;
     left: 0;
@@ -353,7 +358,6 @@
     font-weight: bold;
     grid-column: 3/4;
     display: inline-flex;
-    margin: 20px;
     box-sizing: border-box;
   }
   .boton-busqueda {
@@ -370,7 +374,7 @@
     box-sizing: border-box;
   }
   .boton-idioma {
-    width: 130px;
+    width: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -379,7 +383,7 @@
     margin: 10px;
   }
   .boton-login {
-    width: 130px;
+    width: 100px;
     text-align: center;
     margin: 10px;
     display: flex;
@@ -431,7 +435,7 @@
   .footer {
     background-color: rgb(16, 16, 16);
     height: 400px;
-    width: 100vw;
+    width: 100%;
     padding: 40px;
     display: flex;
     justify-content: space-between;
@@ -470,7 +474,7 @@
   font-family: "Anton";
   font-size: 2.5rem;
   height: 80px;
-  width: 100vw;
+  width: 70vw;
   text-shadow: -2px 0px 0 rgb(114, 165, 114);
 }
 .subtitulo-index h2 {
@@ -759,8 +763,7 @@ li .nav-link {
   .main {
     background: rgb(6, 15, 5);
     background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
-    width: 100vw;
-    left: 0px;
+    width: 100%;
     /* PALMARES */
   }
   .main h2 {
@@ -769,15 +772,19 @@ li .nav-link {
   .main-destacados {
     background: rgb(6, 15, 5);
     background: linear-gradient(270deg, rgb(6, 15, 5) 0%, rgb(18, 120, 26) 41%, rgb(58, 136, 8) 100%);
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-repeat: no-repeat;
   }
+  .main-destacados .carousel {
+    width: 100%;
+    align-items: center;
+  }
   .main-destacados .carousel-inner {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -844,9 +851,10 @@ li .nav-link {
   }
   .main-noticias-area {
     margin: 10px;
-    width: 99vw;
+    width: 99%;
     height: 850px;
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, minmax(350px, 40vh));
     gap: 10px;
@@ -858,14 +866,21 @@ li .nav-link {
   .main-noticias-area-tabla {
     grid-column: 3/4;
     grid-row: 1/3;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
-  .main-noticias-area-tabla img {
+  .main-noticias-area-tabla figure {
+    justify-self: center;
+  }
+  .main-noticias-area-tabla figure img {
     box-shadow: 10px 10px 10px black;
   }
   .main-palmares {
     background-color: #F1F3F2;
     height: 400px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1961,8 +1976,16 @@ li .nav-link {
   .mas-deporte-basquetbol-staff-plantel {
     box-shadow: 10px 10px 10px black;
   }
+  .mas-deporte-basquetbol-staff-plantel .carousel-inner {
+    width: 200px;
+    height: 250px;
+  }
   .mas-deporte-basquetbol-staff-ct {
     box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-basquetbol-staff-ct .carousel-inner {
+    width: 200px;
+    height: 250px;
   }
   .mas-deporte-rugby {
     display: flex;
@@ -2005,8 +2028,16 @@ li .nav-link {
   .mas-deporte-rugby-staff-plantel {
     box-shadow: 10px 10px 10px black;
   }
+  .mas-deporte-rugby-staff-plantel .carousel-inner {
+    width: 200px;
+    height: 250px;
+  }
   .mas-deporte-rugby-staff-ct {
     box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby-staff-ct .carousel-inner {
+    width: 200px;
+    height: 250px;
   }
   .mas-deporte-atletismo {
     display: flex;
@@ -2049,8 +2080,16 @@ li .nav-link {
   .mas-deporte-atletismo-staff-plantel {
     box-shadow: 10px 10px 10px black;
   }
+  .mas-deporte-atletismo-staff-plantel .carousel-inner {
+    width: 200px;
+    height: 250px;
+  }
   .mas-deporte-atletismo-staff-ct {
     box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo-staff-ct .carousel-inner {
+    width: 200px;
+    height: 250px;
   }
 }
 /* VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO - VERSIÓN ESCRITORIO */

@@ -103,7 +103,7 @@
 @media (min-width: 1200px) {
     header {
         height: 150px;
-        width: 100vw;
+        width: 100%;
         background-color: $color-secundario;
         top: 0;
         left: 0;
@@ -179,7 +179,6 @@
         font-weight: bold;
         grid-column: 3/4;
         display: inline-flex;
-        margin: 20px;
         box-sizing: border-box;
     }
 
@@ -199,7 +198,7 @@
         }
 
         &-idioma {
-            width: 130px;
+            width: 100px;
             text-align: center;
             @include flex-center();
             border-radius: 25%;
@@ -207,7 +206,7 @@
         }
 
         &-login {
-            width: 130px;
+            width: 100px;
             text-align: center;
             margin: 10px;
             @include flex-center();

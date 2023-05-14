@@ -4,14 +4,14 @@
     font-family: "Anton";
     font-size: 2.5rem;
     height: 80px;
-    width: 100vw;
+    width: 70vw;
     text-shadow: -2px 0px 0 rgb(114, 165, 114);
 
     h2 {
         margin-top: 20px;
         position: relative;
         animation-name: nav-move;
-        animation-duration: 5s;
+        animation-duration: 5s;        
     }
 
     @keyframes nav-move {
