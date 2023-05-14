@@ -11,7 +11,7 @@
 
         // SUBTITULO
         h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         // SECCION DESTACADOS
@@ -35,7 +35,7 @@
                 }
 
                 h4 {
-                    font-size: 35px;
+                    font-size: 25px;
                     font-family: "Kapra-Bold";
                     text-transform: uppercase;
                     color: white;
@@ -48,21 +48,21 @@
                 }
 
                 .boton-leer-mas {
-                    align-self: center;
-                    font-size: 1rem;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    width: 150px;
-                    height: 30px;
-                    border-radius: 20%;
-                    margin: 10px;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: $color-secundario;
-                    background-color: $color-primario;
-                    box-sizing: border-box;
-                    border: solid 5px black;
+                //     align-self: center;
+                font-size: 0.8rem;
+                //     font-family: Verdana, Geneva, Tahoma, sans-serif;
+                width: 80px;
+                height: 50px;
+                //     border-radius: 20%;
+                //     margin: 10px;
+                //     text-align: center;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     color: $color-secundario;
+                //     background-color: $color-primario;
+                //     box-sizing: border-box;
+                //     border: solid 5px black;
                 }
             }
         }
@@ -192,23 +192,23 @@
                     display: none;
                 }
 
-                .boton-leer-mas {
-                    align-self: center;
-                    font-size: 1rem;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    width: 150px;
-                    height: 30px;
-                    border-radius: 20%;
-                    margin: 10px;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: $color-secundario;
-                    background-color: $color-primario;
-                    box-sizing: border-box;
-                    border: solid 5px black;
-                }
+                // .boton-leer-mas {
+                //     align-self: center;
+                //     font-size: 1rem;
+                //     font-family: Verdana, Geneva, Tahoma, sans-serif;
+                //     width: 150px;
+                //     height: 30px;
+                //     border-radius: 20%;
+                //     margin: 10px;
+                //     text-align: center;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     color: $color-secundario;
+                //     background-color: $color-primario;
+                //     box-sizing: border-box;
+                //     border: solid 5px black;
+                // }
             }
         }
 
@@ -296,7 +296,7 @@
         background: rgb(6, 15, 5);
         background: linear-gradient(270deg, rgba(6, 15, 5, 1) 0%, rgba(18, 120, 26, 1) 41%, rgba(58, 136, 8, 1) 100%);
         width: 100%;
-        
+
         h2 {
             font-size: 2.5rem;
         }
@@ -311,10 +311,11 @@
             align-items: center;
             background-repeat: no-repeat;
 
-            .carousel{
+            .carousel {
                 width: 100%;
                 align-items: center;
             }
+
             // CARRUSEL            
             .carousel-inner {
                 width: 100%;
@@ -346,22 +347,22 @@
                     font-weight: bold;
                 }
 
-                .boton-leer-mas {
-                    font-size: 1.25rem;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    width: 130px;
-                    height: 70px;
-                    border-radius: 15%;
-                    margin: 10px;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: $color-secundario;
-                    background-color: $color-primario;
-                    box-sizing: border-box;
-                    border: solid 5px black;
-                }
+                // .boton-leer-mas {
+                //     font-size: 1.25rem;
+                //     font-family: Verdana, Geneva, Tahoma, sans-serif;
+                //     width: 130px;
+                //     height: 70px;
+                //     border-radius: 15%;
+                //     margin: 10px;
+                //     text-align: center;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     color: $color-secundario;
+                //     background-color: $color-primario;
+                //     box-sizing: border-box;
+                //     border: solid 5px black;
+                // }
             }
         }
 
@@ -409,19 +410,21 @@
 
                 &-tabla {
                     grid-column: 3/4;
-                    grid-row: 1/3;     
+                    grid-row: 1/3;
                     width: 90%;
-                    height: 100%;      
+                    height: 100%;
                     display: flex;
                     align-items: center;
-                    figure{
-                        justify-self: center;                 
+
+                    figure {
+                        justify-self: center;
+
                         img {
                             box-shadow: 10px 10px 10px black;
                         }
                     }
 
-                    
+
                 }
             }
         }

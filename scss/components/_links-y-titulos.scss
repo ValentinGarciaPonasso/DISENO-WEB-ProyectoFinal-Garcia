@@ -53,6 +53,15 @@ li .nav-link {
         font-size: 1.0rem;
         font-weight: bold;
     }
+    .subtitulo-index {
+        text-align: center;
+        color: $color-secundario;
+        font-family: "Anton";
+        font-size: 2rem;
+        height: 100px;
+        width: 90vw;
+        text-shadow: -2px 0px 0 rgb(114, 165, 114);
+    }
 }
 
 @media (min-width: 1200px) {

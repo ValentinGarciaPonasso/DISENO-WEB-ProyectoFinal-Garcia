@@ -12,3 +12,14 @@
     box-sizing: border-box;
     border: solid 5px $color-secundario;
 }
+
+.carousel-control-next-icon{
+    background-image: url("/pictures/flechader.png"); 
+    width: 50px;
+    height: 50px;
+}
+.carousel-control-prev-icon{
+    background-image: url("/pictures/flechaizq.png");
+    width: 50px;
+    height: 50px; 
+}

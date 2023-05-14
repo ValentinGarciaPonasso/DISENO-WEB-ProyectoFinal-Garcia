@@ -32,6 +32,18 @@
   border: solid 5px black;
 }
 
+.carousel-control-next-icon {
+  background-image: url("/pictures/flechader.png");
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("/pictures/flechaizq.png");
+  width: 50px;
+  height: 50px;
+}
+
 @media (max-width: 1199px) {
   .carta {
     max-width: 400px;
@@ -154,19 +166,31 @@
     align-self: center;
   }
 }
-.fotos-personas {
-  box-sizing: border-box;
+@media (min-width: 300px) and (max-width: 479px) {
+  .fotos-personas {
+    box-sizing: border-box;
+  }
+  .fotos-personas img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 10px 10px 10px black;
+    background-size: cover;
+  }
 }
-.fotos-personas :hover {
-  transform: scale(1.1, 1.1);
+@media (min-width: 480px) {
+  .fotos-personas {
+    box-sizing: border-box;
+  }
+  .fotos-personas :hover {
+    transform: scale(1.1, 1.1);
+  }
+  .fotos-personas img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 10px 10px 10px black;
+    background-size: cover;
+  }
 }
-.fotos-personas img {
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: 10px 10px 10px black;
-  background-size: cover;
-}
-
 .noticias-index {
   max-width: 500px;
   min-width: 300px;
@@ -517,6 +541,15 @@ li .nav-link {
     font-size: 1rem;
     font-weight: bold;
   }
+  .subtitulo-index {
+    text-align: center;
+    color: black;
+    font-family: "Anton";
+    font-size: 2rem;
+    height: 100px;
+    width: 90vw;
+    text-shadow: -2px 0px 0 rgb(114, 165, 114);
+  }
 }
 @media (min-width: 1200px) {
   .link {
@@ -536,7 +569,7 @@ li .nav-link {
     /* PROXIMOS PARTIDOS */
   }
   .main h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .main-destacados {
     background: rgb(6, 15, 5);
@@ -554,7 +587,7 @@ li .nav-link {
     align-items: center;
   }
   .main-destacados .carousel-item h4 {
-    font-size: 35px;
+    font-size: 25px;
     font-family: "Kapra-Bold";
     text-transform: uppercase;
     color: white;
@@ -565,21 +598,9 @@ li .nav-link {
     display: none;
   }
   .main-destacados .carousel-item .boton-leer-mas {
-    align-self: center;
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 150px;
-    height: 30px;
-    border-radius: 20%;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: rgba(5, 107, 5, 0.993);
-    box-sizing: border-box;
-    border: solid 5px black;
+    font-size: 0.8rem;
+    width: 80px;
+    height: 50px;
   }
   .main-proximos-partidos {
     margin: 40px 0px 0px 0px;
@@ -679,23 +700,6 @@ li .nav-link {
   }
   .main-destacados .carousel-item p {
     display: none;
-  }
-  .main-destacados .carousel-item .boton-leer-mas {
-    align-self: center;
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 150px;
-    height: 30px;
-    border-radius: 20%;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: rgba(5, 107, 5, 0.993);
-    box-sizing: border-box;
-    border: solid 5px black;
   }
   .main-proximos-partidos {
     margin: 40px 0px 0px 0px;
@@ -807,22 +811,6 @@ li .nav-link {
     font-family: "Kapra-Bold";
     color: white;
     font-weight: bold;
-  }
-  .main-destacados .carousel-item .boton-leer-mas {
-    font-size: 1.25rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 130px;
-    height: 70px;
-    border-radius: 15%;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: rgba(5, 107, 5, 0.993);
-    box-sizing: border-box;
-    border: solid 5px black;
   }
   .main-proximos-partidos {
     margin: 40px 0px 0px 0px;
@@ -1810,8 +1798,16 @@ li .nav-link {
   .mas-deporte-basquetbol-staff-plantel {
     box-shadow: 10px 10px 10px black;
   }
+  .mas-deporte-basquetbol-staff-plantel .carousel-inner {
+    width: 200px;
+    height: 250px;
+  }
   .mas-deporte-basquetbol-staff-ct {
     box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-basquetbol-staff-ct .carousel-inner {
+    width: 200px;
+    height: 250px;
   }
   .mas-deporte-rugby {
     display: flex;
@@ -1854,8 +1850,16 @@ li .nav-link {
   .mas-deporte-rugby-staff-plantel {
     box-shadow: 10px 10px 10px black;
   }
+  .mas-deporte-rugby-staff-plantel .carousel-inner {
+    width: 200px;
+    height: 250px;
+  }
   .mas-deporte-rugby-staff-ct {
     box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-rugby-staff-ct .carousel-inner {
+    width: 200px;
+    height: 250px;
   }
   .mas-deporte-atletismo {
     display: flex;
@@ -1898,8 +1902,16 @@ li .nav-link {
   .mas-deporte-atletismo-staff-plantel {
     box-shadow: 10px 10px 10px black;
   }
+  .mas-deporte-atletismo-staff-plantel .carousel-inner {
+    width: 200px;
+    height: 250px;
+  }
   .mas-deporte-atletismo-staff-ct {
     box-shadow: 10px 10px 10px black;
+  }
+  .mas-deporte-atletismo-staff-ct .carousel-inner {
+    width: 200px;
+    height: 250px;
   }
 }
 /* VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET - VERSIÓN TABLET */
